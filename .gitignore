@@ -1,0 +1,13 @@
+# Ignore extracted data and environment
+extracted_medical_data.json
+my-new-file.txt
+.env
+venv/
+
+# Ignore PDFs and input data (optional if sensitive)
+
+# Jupyter notebook checkpoints (auto-saved state)
+.ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
