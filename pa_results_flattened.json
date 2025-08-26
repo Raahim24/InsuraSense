@@ -15,7 +15,7 @@
     "name": "T3",
     "page": 2,
     "field_label": "Start date: (DD)",
-    "answer": "22"
+    "answer": "23"
   },
   {
     "name": "T4",
@@ -111,7 +111,7 @@
     "name": "T19",
     "page": 2,
     "field_label": "Patient Phone",
-    "answer": "865-395-3958"
+    "answer": "865-839-7458"
   },
   {
     "name": "T20",
@@ -123,7 +123,7 @@
     "name": "T21",
     "page": 2,
     "field_label": "Cell Phone:",
-    "answer": "865-395-0481"
+    "answer": "865-839-7458"
   },
   {
     "name": "T22",
@@ -177,7 +177,7 @@
     "name": "T30",
     "page": 2,
     "field_label": "Insured:",
-    "answer": "Same as patient"
+    "answer": "ABDULLA, SHAKH"
   },
   {
     "name": "CB31",
@@ -195,19 +195,19 @@
     "name": "T33",
     "page": 2,
     "field_label": "If yes, provide ID#:",
-    "answer": "Not documented"
+    "answer": "Not applicable"
   },
   {
     "name": "T34",
     "page": 2,
     "field_label": "Carrier Name:",
-    "answer": "Not documented"
+    "answer": "Not applicable"
   },
   {
     "name": "T35",
     "page": 2,
     "field_label": "Insured:",
-    "answer": "Not documented"
+    "answer": "Not applicable"
   },
   {
     "name": "T42",
@@ -255,7 +255,7 @@
     "name": "T49",
     "page": 2,
     "field_label": "City:",
-    "answer": "Nashville"
+    "answer": "NASHVILLE"
   },
   {
     "name": "T50",
@@ -315,13 +315,13 @@
     "name": "T58.1",
     "page": 2,
     "field_label": "Office Contact Name:",
-    "answer": "Erfan Rostami, BSN, RN"
+    "answer": "Not documented"
   },
   {
     "name": "T59",
     "page": 2,
     "field_label": "Phone:",
-    "answer": "615-343-1176"
+    "answer": "Not documented"
   },
   {
     "name": "Provider Admin CB.1",
@@ -363,7 +363,7 @@
     "name": "Provider Admin T.6",
     "page": 2,
     "field_label": "Phone:",
-    "answer": "614-895-7655"
+    "answer": "Not documented"
   },
   {
     "name": "Provider Admin T.8",
@@ -471,19 +471,19 @@
     "name": "Provider Admin CB.26",
     "page": 2,
     "field_label": "Other:",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "Provider Admin T.27",
     "page": 2,
     "field_label": "Other:",
-    "answer": "Not applicable"
+    "answer": "Infusion Center"
   },
   {
     "name": "Provider Admin T.28",
     "page": 2,
     "field_label": "Name:",
-    "answer": "Not documented"
+    "answer": "Golden Gate Infusion Center"
   },
   {
     "name": "Provider Admin T.29a",
@@ -513,13 +513,13 @@
     "name": "Provider Admin T.33",
     "page": 2,
     "field_label": "Phone:",
-    "answer": "Not documented"
+    "answer": "614-895-7655"
   },
   {
     "name": "Provider Admin T.34",
     "page": 2,
     "field_label": "Fax:",
-    "answer": "Not documented"
+    "answer": "614-278-3355"
   },
   {
     "name": "Provider Admin T.35",
@@ -549,7 +549,7 @@
     "name": "CB61",
     "page": 2,
     "field_label": "Rituxan (rituximab)",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "CB62",
@@ -567,13 +567,13 @@
     "name": "T64",
     "page": 2,
     "field_label": "Dose:",
-    "answer": "694 mg"
+    "answer": "694 mg (rounded from 693.75 mg = 375 mg/m2 x 1.85 m2 - BSA might be out of date)"
   },
   {
     "name": "T65",
     "page": 2,
     "field_label": "Directions for Use:",
-    "answer": "Initial dose: intravenous, once, starting 30 minutes after treatment start time. Maintenance dose: every 24 weeks, intravenous, once, starting when released. Infusion rate: 1st infusion initiate at 50mg/hr and if no infusion toxicity reaction, may increase by 50mg/hr every 30 minutes; Max Rate 400mg/hr. Subsequent infusions initiate at 100mg/hr and if no infusion toxicity reaction, may increase by 100mg/hr every 30 min; Max Rate 400mg/hr."
+    "answer": "Initial Dose: Once, Starting 30 minutes after treatment start time, Every 2 weeks for 2 doses. Maintenance Dose: Once, Every 24 weeks."
   },
   {
     "name": "T66",
@@ -675,7 +675,7 @@
     "name": "T84",
     "page": 2,
     "field_label": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred biosimilar products when indicated for the patient’s diagnosis?",
-    "answer": "Patient is being treated with Truxima (a rituximab biosimilar). No contraindications to preferred biosimilars are noted."
+    "answer": "Not documented"
   },
   {
     "name": "CB82",
@@ -705,7 +705,7 @@
     "name": "T19",
     "page": 3,
     "field_label": "Patient Phone",
-    "answer": "865-395-0481(Mobile)"
+    "answer": "865-3950481"
   },
   {
     "name": "T14",
@@ -897,67 +897,67 @@
     "name": "T118",
     "page": 3,
     "field_label": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient’s diagnosis?",
-    "answer": "Patient has Multiple Sclerosis, for which these drugs (Inflectra, Renflexis, Simponi Aria) are not indicated. Rituximab (Truxima) is the indicated therapy."
+    "answer": "Not documented"
   },
   {
     "name": "CB115z",
     "page": 3,
     "field_label": "Inflectra (infliximab-dyyb)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB116z",
     "page": 3,
     "field_label": "Renflexis (infliximab-abda)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB117z",
     "page": 3,
     "field_label": "Simponi Aria (golimumab)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "T125",
     "page": 3,
     "field_label": "Please explain if there are contraindications or any other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient’s diagnosis?",
-    "answer": "Patient has Multiple Sclerosis, for which these drugs (Enbrel, Humira, Idacio, Rinvoq, Tyenne SC, Xeljanz/Xeljanz XR) are not indicated. Rituximab (Truxima) is the indicated therapy."
+    "answer": "Not documented"
   },
   {
     "name": "CB119z",
     "page": 3,
     "field_label": "Enbrel (etanercept)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB120z",
     "page": 3,
     "field_label": "Humira (adalimumab)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB121z",
     "page": 3,
     "field_label": "Idacio (adalimumab-aacf)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB122z",
     "page": 3,
     "field_label": "Rinvoq (upadacitinib)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB123z",
     "page": 3,
     "field_label": "Tyenne SC (tocilizumab-aazg)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB124z",
     "page": 3,
     "field_label": "Xeljanz/Xeljanz XR (tofacitinib)",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB96.4.0",
@@ -1035,13 +1035,13 @@
     "name": "CB105",
     "page": 3,
     "field_label": "Yes",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB106",
     "page": 3,
     "field_label": "No",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "CB106a",
@@ -1089,7 +1089,7 @@
     "name": "CB113",
     "page": 3,
     "field_label": "None of the above",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB106b",
@@ -1371,7 +1371,7 @@
     "name": "T155",
     "page": 4,
     "field_label": "Other:",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "CB156",
@@ -1527,85 +1527,85 @@
     "name": "T189",
     "page": 4,
     "field_label": "Medication:",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T190",
     "page": 4,
     "field_label": "Date: (MM)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T191",
     "page": 4,
     "field_label": "Date: (DD)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T192",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T193",
     "page": 4,
     "field_label": "Date: (MM)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T194",
     "page": 4,
     "field_label": "Date: (DD)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T195",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T196",
     "page": 4,
     "field_label": "Medication:",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T197",
     "page": 4,
     "field_label": "Date: (MM)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T198",
     "page": 4,
     "field_label": "Date: (DD)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T199",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T200",
     "page": 4,
     "field_label": "Date: (MM)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T201",
     "page": 4,
     "field_label": "Date: (DD)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "T202",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "answer": "Not applicable"
+    "answer": "Not documented"
   },
   {
     "name": "CB181",
@@ -1887,13 +1887,13 @@
     "name": "CB299",
     "page": 5,
     "field_label": "Yes",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB300",
     "page": 5,
     "field_label": "No",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "CB301",
@@ -1923,7 +1923,7 @@
     "name": "T305",
     "page": 5,
     "field_label": "Please indicate the length of time on Rituxan (rituximab):",
-    "answer": "Less than 1 week"
+    "answer": "Initial dose scheduled May 23, 2024. Second dose 2 weeks after."
   },
   {
     "name": "CB310",
@@ -1971,25 +1971,25 @@
     "name": "CB313",
     "page": 5,
     "field_label": "Yes",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB314",
     "page": 5,
     "field_label": "No",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "CB315",
     "page": 5,
     "field_label": "Yes",
-    "answer": "Yes"
+    "answer": "No"
   },
   {
     "name": "CB316",
     "page": 5,
     "field_label": "No",
-    "answer": "No"
+    "answer": "Yes"
   },
   {
     "name": "T317",
