@@ -5,63 +5,63 @@
     "page": 2,
     "field_label": "Start of treatment",
     "question": "Is this a new treatment start for the patient?",
-    "context": "Initial checkbox in treatment timeline section indicating whether patient is beginning new therapy versus continuing existing treatment."
+    "context": "Treatment timeline section. Indicates initiation of new therapy for patient. Dependent on CB5."
   },
   "T2": {
     "name": "T2",
     "type": "text",
     "page": 2,
     "field_label": "Start date: (MM)",
-    "question": "What is the month of treatment start?",
-    "context": "2-digit month format for planned medication initiation date in treatment scheduling section."
+    "question": "What is the month of the treatment start date?",
+    "context": "Treatment timeline section. Month of planned medication initiation for patient. Only if 'Start of treatment' selected."
   },
   "T3": {
     "name": "T3",
     "type": "text",
     "page": 2,
     "field_label": "Start date: (DD)",
-    "question": "What is the day of treatment start?",
-    "context": "2-digit day format for planned medication initiation date in treatment scheduling section."
+    "question": "What is the day of the treatment start date?",
+    "context": "Treatment timeline section. Day of planned medication initiation for patient. Only if 'Start of treatment' selected."
   },
   "T4": {
     "name": "T4",
     "type": "text",
     "page": 2,
     "field_label": "Start date: (YYYY)",
-    "question": "What is the year of treatment start?",
-    "context": "4-digit year format for planned medication initiation date in treatment scheduling section."
+    "question": "What is the year of the treatment start date?",
+    "context": "Treatment timeline section. Year of planned medication initiation for patient. Only if 'Start of treatment' selected."
   },
   "CB5": {
     "name": "CB5",
     "type": "checkbox",
     "page": 2,
     "field_label": "Continuation of therapy",
-    "question": "Is this a continuation of an existing therapy for the patient?",
-    "context": "Indicates if the request is for ongoing treatment, requiring details of the last administration date."
+    "question": "Is this a continuation of therapy for the patient?",
+    "context": "Treatment timeline section. Indicates ongoing therapy for patient. Dependent on CB1."
   },
   "T6": {
     "name": "T6",
     "type": "text",
     "page": 2,
     "field_label": "Date of last treatment: (MM)",
-    "question": "What is the month of the last treatment?",
-    "context": "2-digit month for the most recent administration of the medication being continued."
+    "question": "What is the month of the patient's last treatment date?",
+    "context": "Treatment timeline section. Month of most recent treatment for patient. Only if 'Continuation of therapy' selected."
   },
   "T7": {
     "name": "T7",
     "type": "text",
     "page": 2,
     "field_label": "Date of last treatment: (DD)",
-    "question": "What is the day of the last treatment?",
-    "context": "2-digit day for the most recent administration of the medication being continued."
+    "question": "What is the day of the patient's last treatment date?",
+    "context": "Treatment timeline section. Day of most recent treatment for patient. Only if 'Continuation of therapy' selected."
   },
   "T8": {
     "name": "T8",
     "type": "text",
     "page": 2,
     "field_label": "Date of last treatment: (YYYY)",
-    "question": "What is the year of the last treatment?",
-    "context": "4-digit year for the most recent administration of the medication being continued."
+    "question": "What is the year of the patient's last treatment date?",
+    "context": "Treatment timeline section. Year of most recent treatment for patient. Only if 'Continuation of therapy' selected."
   },
   "T9": {
     "name": "T9",
@@ -69,23 +69,23 @@
     "page": 2,
     "field_label": "Precertification Requested By:",
     "question": "Who is requesting this precertification?",
-    "context": "Name of the individual submitting the precertification request on behalf of the patient/provider."
+    "context": "General information section. Identifies the individual or entity submitting the prior authorization request."
   },
   "T10": {
     "name": "T10",
     "type": "text",
     "page": 2,
     "field_label": "Phone:",
-    "question": "What is the phone number of the precertification requestor?",
-    "context": "Contact phone number for the person designated as the precertification requestor."
+    "question": "What is the phone number for the precertification requester?",
+    "context": "General information section. Contact details for the precertification requester for follow-up."
   },
   "T11": {
     "name": "T11",
     "type": "text",
     "page": 2,
     "field_label": "Fax:",
-    "question": "What is the fax number of the precertification requestor?",
-    "context": "Contact fax number for the person designated as the precertification requestor."
+    "question": "What is the fax number for the precertification requester?",
+    "context": "General information section. Contact details for the precertification requester for document submission."
   },
   "T12": {
     "name": "T12",
@@ -93,7 +93,7 @@
     "page": 5,
     "field_label": "Patient First Name",
     "question": "What is the patient's first name?",
-    "context": "Patient demographic information for identification purposes in the patient information section."
+    "context": "Patient identification in the Patient Information section, essential for accurate record matching and verification."
   },
   "T13": {
     "name": "T13",
@@ -101,15 +101,15 @@
     "page": 5,
     "field_label": "Patient Last Name",
     "question": "What is the patient's last name?",
-    "context": "Patient demographic information for identification purposes in the patient information section."
+    "context": "Patient identification in the Patient Information section, crucial for accurate record matching and verification."
   },
   "T14": {
     "name": "T14",
     "type": "text",
     "page": 5,
     "field_label": "Patient DOB (MM/DD/YYYY)",
-    "question": "What is the patient's date of birth?",
-    "context": "Patient demographic information to verify identity and age in the patient information section."
+    "question": "What is the patient's date of birth (MM/DD/YYYY)?",
+    "context": "Patient identification in the Patient Information section, vital for age-based criteria and accurate record matching."
   },
   "T15": {
     "name": "T15",
@@ -117,23 +117,23 @@
     "page": 2,
     "field_label": "Address:",
     "question": "What is the patient's street address?",
-    "context": "Patient's primary residential address for demographic and communication purposes."
+    "context": "Patient Information section. Required residential address for patient contact and records."
   },
   "T16": {
     "name": "T16",
     "type": "text",
     "page": 2,
     "field_label": "City:",
-    "question": "What is the patient's city?",
-    "context": "Patient's residential city, part of demographic and contact information."
+    "question": "What is the patient's city of residence?",
+    "context": "Patient Information section. Required city for the patient's residential address."
   },
   "T17": {
     "name": "T17",
     "type": "text",
     "page": 2,
     "field_label": "State:",
-    "question": "What is the patient's state?",
-    "context": "Patient's residential state, part of demographic and contact information."
+    "question": "What is the patient's state of residence?",
+    "context": "Patient Information section. Required state for the patient's residential address."
   },
   "T18": {
     "name": "T18",
@@ -141,7 +141,7 @@
     "page": 2,
     "field_label": "ZIP:",
     "question": "What is the patient's ZIP code?",
-    "context": "Patient's residential ZIP code, part of demographic and contact information."
+    "context": "Patient Information section. Required ZIP code for the patient's residential address."
   },
   "T19": {
     "name": "T19",
@@ -149,7 +149,7 @@
     "page": 5,
     "field_label": "Patient Phone",
     "question": "What is the patient's phone number?",
-    "context": "Patient contact information for communication in the patient information section."
+    "context": "Patient contact information in the Patient Information section for communication regarding the request."
   },
   "T20": {
     "name": "T20",
@@ -157,7 +157,7 @@
     "page": 2,
     "field_label": "Work Phone:",
     "question": "What is the patient's work phone number?",
-    "context": "Secondary contact number for the patient, used for business hours contact."
+    "context": "Patient Information section. Secondary contact phone number for the patient."
   },
   "T21": {
     "name": "T21",
@@ -165,7 +165,7 @@
     "page": 2,
     "field_label": "Cell Phone:",
     "question": "What is the patient's cell phone number?",
-    "context": "Mobile contact number for the patient, typically for direct and urgent communications."
+    "context": "Patient Information section. Mobile contact number for the patient."
   },
   "T22": {
     "name": "T22",
@@ -173,7 +173,7 @@
     "page": 2,
     "field_label": "E-mail:",
     "question": "What is the patient's email address?",
-    "context": "Electronic contact information for the patient, for digital correspondence."
+    "context": "Patient Information section. Electronic contact information for the patient."
   },
   "T24": {
     "name": "T24",
@@ -181,7 +181,7 @@
     "page": 2,
     "field_label": "lbs",
     "question": "What is the patient's current weight in pounds?",
-    "context": "Patient's current weight in pounds, critical for accurate medication dosing calculations."
+    "context": "Patient Information section. Patient's current weight, used for medication dosing calculations."
   },
   "T25": {
     "name": "T25",
@@ -189,31 +189,31 @@
     "page": 2,
     "field_label": "kgs",
     "question": "What is the patient's current weight in kilograms?",
-    "context": "Patient's current weight in kilograms, critical for accurate medication dosing calculations."
+    "context": "Patient Information section. Patient's current weight, used for medication dosing calculations."
   },
   "T26": {
     "name": "T26",
     "type": "text",
     "page": 2,
     "field_label": "inches",
-    "question": "What is the patient's current height in inches?",
-    "context": "Patient's current height in inches, used for body surface area calculations for dosing."
+    "question": "What is the patient's height in inches?",
+    "context": "Patient Information section. Patient's height, used for body surface area calculations for dosing."
   },
   "T27": {
     "name": "T27",
     "type": "text",
     "page": 2,
     "field_label": "cms",
-    "question": "What is the patient's current height in centimeters?",
-    "context": "Patient's current height in centimeters, used for body surface area calculations for dosing."
+    "question": "What is the patient's height in centimeters?",
+    "context": "Patient Information section. Patient's height, used for body surface area calculations for dosing."
   },
   "T23": {
     "name": "T23",
     "type": "text",
     "page": 2,
     "field_label": "Allergies:",
-    "question": "What known allergies does the patient have?",
-    "context": "Crucial safety information regarding patient's allergies to ensure medication safety."
+    "question": "Does the patient have any known allergies? If so, please list them.",
+    "context": "Patient Information section. Critical clinical information for patient safety and medication selection."
   },
   "T28": {
     "name": "T28",
@@ -221,7 +221,7 @@
     "page": 2,
     "field_label": "Member ID #:",
     "question": "What is the patient's insurance member ID number?",
-    "context": "Primary identifier for the patient under their insurance policy for eligibility verification."
+    "context": "Insurance Information section. Primary identifier for the patient under their health plan."
   },
   "T29": {
     "name": "T29",
@@ -229,15 +229,15 @@
     "page": 2,
     "field_label": "Group #:",
     "question": "What is the patient's insurance group number?",
-    "context": "Identifies the specific insurance group or plan under which the patient is covered."
+    "context": "Insurance Information section. Identifies the group policy the patient is covered under."
   },
   "T30": {
     "name": "T30",
     "type": "text",
     "page": 2,
     "field_label": "Insured:",
-    "question": "Who is the primary insured party for this policy?",
-    "context": "Name of the primary policyholder, especially if different from the patient."
+    "question": "What is the name of the primary insured party?",
+    "context": "Insurance Information section. Identifies the policyholder, if different from the patient."
   },
   "CB31": {
     "name": "CB31",
@@ -245,39 +245,39 @@
     "page": 2,
     "field_label": "Yes",
     "question": "Does the patient have other health coverage?",
-    "context": "Determines if secondary insurance information is required for coordination of benefits."
+    "context": "Insurance Information section. Determines if coordination of benefits is required due to multiple coverages."
   },
   "CB32": {
     "name": "CB32",
     "type": "checkbox",
     "page": 2,
     "field_label": "No",
-    "question": "Does the patient have no other health coverage?",
-    "context": "Indicates the absence of secondary insurance coverage for the patient."
+    "question": "Does the patient not have other health coverage?",
+    "context": "Insurance Information section. Determines if coordination of benefits is required due to multiple coverages."
   },
   "T33": {
     "name": "T33",
     "type": "text",
     "page": 2,
     "field_label": "If yes, provide ID#:",
-    "question": "If other coverage exists, what is the ID number?",
-    "context": "Member ID for the patient's secondary insurance policy, if applicable."
+    "question": "If the patient has other coverage, what is the ID number for that coverage?",
+    "context": "Insurance Information section. Sub-question dependent on CB31 (Yes). Provides ID for secondary insurance."
   },
   "T34": {
     "name": "T34",
     "type": "text",
     "page": 2,
     "field_label": "Carrier Name:",
-    "question": "What is the name of the other insurance carrier?",
-    "context": "Name of the secondary insurance company, if the patient has additional coverage."
+    "question": "What is the name of the patient's other insurance carrier?",
+    "context": "Insurance Information section. Sub-question dependent on CB31 (Yes). Identifies the secondary insurance provider."
   },
   "T35": {
     "name": "T35",
     "type": "text",
     "page": 2,
     "field_label": "Insured:",
-    "question": "Who is the primary insured party for the other policy?",
-    "context": "Name of the primary policyholder for the patient's secondary insurance, if applicable."
+    "question": "What is the name of the primary insured party for the other coverage?",
+    "context": "Insurance Information section. Sub-question dependent on CB31 (Yes). Identifies secondary policyholder."
   },
   "T42": {
     "name": "T42",
@@ -285,7 +285,7 @@
     "page": 2,
     "field_label": "First Name:",
     "question": "What is the prescriber's first name?",
-    "context": "Prescriber's first name for proper identification and record-keeping."
+    "context": "Prescriber Information section. Demographic data for the prescribing physician/provider."
   },
   "T43": {
     "name": "T43",
@@ -293,7 +293,7 @@
     "page": 2,
     "field_label": "Last Name:",
     "question": "What is the prescriber's last name?",
-    "context": "Prescriber's last name for proper identification and record-keeping."
+    "context": "Prescriber Information section. Demographic data for the prescribing physician/provider."
   },
   "CB44": {
     "name": "CB44",
@@ -301,7 +301,7 @@
     "page": 2,
     "field_label": "M.D.",
     "question": "Is the prescriber an M.D. (Medical Doctor)?",
-    "context": "Indicates the professional designation of the prescribing physician."
+    "context": "Prescriber Information section. Primary question for the prescriber's medical degree/license type."
   },
   "CB45": {
     "name": "CB45",
@@ -309,7 +309,7 @@
     "page": 2,
     "field_label": "D.O.",
     "question": "Is the prescriber a D.O. (Doctor of Osteopathic Medicine)?",
-    "context": "Indicates the professional designation of the prescribing physician."
+    "context": "Prescriber Information section. Primary question for the prescriber's medical degree/license type."
   },
   "CB46": {
     "name": "CB46",
@@ -317,7 +317,7 @@
     "page": 2,
     "field_label": "N.P.",
     "question": "Is the prescriber an N.P. (Nurse Practitioner)?",
-    "context": "Indicates the professional designation of the prescribing advanced practice nurse."
+    "context": "Prescriber Information section. Primary question for the prescriber's medical degree/license type."
   },
   "CB47": {
     "name": "CB47",
@@ -325,7 +325,7 @@
     "page": 2,
     "field_label": "P.A.",
     "question": "Is the prescriber a P.A. (Physician Assistant)?",
-    "context": "Indicates the professional designation of the prescribing physician assistant."
+    "context": "Prescriber Information section. Primary question for the prescriber's medical degree/license type."
   },
   "T48": {
     "name": "T48",
@@ -333,7 +333,7 @@
     "page": 2,
     "field_label": "Address:",
     "question": "What is the prescriber's street address?",
-    "context": "Prescriber's primary office address for contact and verification."
+    "context": "Prescriber Information section. Business address for the prescribing provider's practice."
   },
   "T49": {
     "name": "T49",
@@ -341,7 +341,7 @@
     "page": 2,
     "field_label": "City:",
     "question": "What is the prescriber's city?",
-    "context": "Prescriber's office city for contact and verification."
+    "context": "Prescriber Information section. City for the prescribing provider's business address."
   },
   "T50": {
     "name": "T50",
@@ -349,7 +349,7 @@
     "page": 2,
     "field_label": "State:",
     "question": "What is the prescriber's state?",
-    "context": "Prescriber's office state for contact and verification."
+    "context": "Prescriber Information section. State for the prescribing provider's business address."
   },
   "T51": {
     "name": "T51",
@@ -357,7 +357,7 @@
     "page": 2,
     "field_label": "ZIP:",
     "question": "What is the prescriber's ZIP code?",
-    "context": "Prescriber's office ZIP code for contact and verification."
+    "context": "Prescriber Information section. ZIP code for the prescribing provider's business address."
   },
   "T52": {
     "name": "T52",
@@ -365,7 +365,7 @@
     "page": 2,
     "field_label": "Phone:",
     "question": "What is the prescriber's phone number?",
-    "context": "Prescriber's office phone number for direct contact."
+    "context": "Prescriber Information section. Primary contact number for the prescribing provider."
   },
   "T53": {
     "name": "T53",
@@ -373,7 +373,7 @@
     "page": 2,
     "field_label": "Fax:",
     "question": "What is the prescriber's fax number?",
-    "context": "Prescriber's office fax number for sending documents."
+    "context": "Prescriber Information section. Fax number for the prescribing provider's office."
   },
   "T54": {
     "name": "T54",
@@ -381,7 +381,7 @@
     "page": 2,
     "field_label": "St Lic #:",
     "question": "What is the prescriber's state license number?",
-    "context": "Prescriber's professional license identifier, mandatory for verification."
+    "context": "Prescriber Information section. Professional license identifier for the prescribing provider."
   },
   "T55": {
     "name": "T55",
@@ -389,7 +389,7 @@
     "page": 2,
     "field_label": "NPI #:",
     "question": "What is the prescriber's NPI (National Provider Identifier) number?",
-    "context": "Unique identification number for healthcare providers required for billing."
+    "context": "Prescriber Information section. Unique identifier for healthcare providers used in HIPAA transactions."
   },
   "T56": {
     "name": "T56",
@@ -397,7 +397,7 @@
     "page": 2,
     "field_label": "DEA #:",
     "question": "What is the prescriber's DEA (Drug Enforcement Administration) number?",
-    "context": "Registration number for prescribers authorized to prescribe controlled substances."
+    "context": "Prescriber Information section. Required for prescribing controlled substances."
   },
   "T57": {
     "name": "T57",
@@ -405,7 +405,7 @@
     "page": 2,
     "field_label": "UPIN:",
     "question": "What is the prescriber's UPIN (Unique Physician Identification Number)?",
-    "context": "Legacy identifier for physicians previously used by Medicare, may still be requested."
+    "context": "Prescriber Information section. Former Medicare identifier; may still be requested for provider identification."
   },
   "T58.0": {
     "name": "T58.0",
@@ -413,15 +413,15 @@
     "page": 2,
     "field_label": "Provider Email:",
     "question": "What is the prescriber's email address?",
-    "context": "Electronic contact information for the prescriber for communication."
+    "context": "Prescriber Information section. Electronic contact information for the prescribing provider."
   },
   "T58.1": {
     "name": "T58.1",
     "type": "text",
     "page": 2,
     "field_label": "Office Contact Name:",
-    "question": "What is the office contact person's name?",
-    "context": "Name of an alternative contact person within the prescriber's office."
+    "question": "What is the name of the office contact person for the prescriber?",
+    "context": "Prescriber Information section. Name of a contact person at the prescriber's office."
   },
   "T59": {
     "name": "T59",
@@ -429,23 +429,23 @@
     "page": 2,
     "field_label": "Phone:",
     "question": "What is the office contact person's phone number?",
-    "context": "Phone number for the alternative office contact person."
+    "context": "Prescriber Information section. Phone number for the office contact person for general inquiries."
   },
   "Provider Admin CB.1": {
     "name": "Provider Admin CB.1",
     "type": "checkbox",
     "page": 2,
     "field_label": "Self-administered",
-    "question": "Will the medication be self-administered?",
-    "context": "Indicates if the patient will administer the medication themselves, impacting dispensing method."
+    "question": "Will the medication be self-administered by the patient?",
+    "context": "Dispensing/Administration Information section. Indicates how the medication will be administered to the patient."
   },
   "Provider Admin CB.2": {
     "name": "Provider Admin CB.2",
     "type": "checkbox",
     "page": 2,
     "field_label": "Physician’s Office",
-    "question": "Will the medication be administered in a physician’s office?",
-    "context": "Indicates the specific healthcare setting for medication administration."
+    "question": "Will the medication be administered at the physician's office?",
+    "context": "Dispensing/Administration Information section. Specifies the location of medication administration."
   },
   "Provider Admin CB.3": {
     "name": "Provider Admin CB.3",
@@ -453,7 +453,7 @@
     "page": 2,
     "field_label": "Home",
     "question": "Will the medication be administered at home?",
-    "context": "Indicates the specific healthcare setting for medication administration."
+    "context": "Dispensing/Administration Information section. Specifies the location of medication administration."
   },
   "Provider Admin CB.4": {
     "name": "Provider Admin CB.4",
@@ -461,7 +461,7 @@
     "page": 2,
     "field_label": "Outpatient Infusion Center",
     "question": "Will the medication be administered at an outpatient infusion center?",
-    "context": "Indicates the specific healthcare setting for medication administration."
+    "context": "Dispensing/Administration Information section. Specifies the location of medication administration."
   },
   "Provider Admin T.5": {
     "name": "Provider Admin T.5",
@@ -469,7 +469,7 @@
     "page": 2,
     "field_label": "Name:",
     "question": "What is the name of the outpatient infusion center?",
-    "context": "Required if Outpatient Infusion Center is selected, specifies the facility name."
+    "context": "Dispensing/Administration Information section. Sub-question for specific outpatient infusion center details, if selected."
   },
   "Provider Admin CB.7": {
     "name": "Provider Admin CB.7",
@@ -477,7 +477,7 @@
     "page": 2,
     "field_label": "Home Infusion Center",
     "question": "Will the medication be administered by a home infusion center?",
-    "context": "Indicates if a specialized home infusion service will provide and administer the drug."
+    "context": "Dispensing/Administration Information section. Specifies if medication administration occurs via home infusion."
   },
   "Provider Admin T.6": {
     "name": "Provider Admin T.6",
@@ -485,159 +485,159 @@
     "page": 2,
     "field_label": "Phone:",
     "question": "What is the phone number for the home infusion center?",
-    "context": "Contact number for the home infusion center providing medication and administration services."
+    "context": "Dispensing/Administration Information section. Sub-question for specific home infusion center details, if selected."
   },
   "Provider Admin T.8": {
     "name": "Provider Admin T.8",
     "type": "text",
     "page": 2,
     "field_label": "Agency Name:",
-    "question": "What is the name of the home infusion agency?",
-    "context": "Name of the agency providing home infusion services for medication administration."
+    "question": "What is the agency name for the home infusion center?",
+    "context": "Dispensing/Administration Information section. Sub-question for specific home infusion center details, if selected."
   },
   "Provider Admin CB.10": {
     "name": "Provider Admin CB.10",
     "type": "checkbox",
     "page": 2,
     "field_label": "Administration code(s)",
-    "question": "Are administration codes being provided?",
-    "context": "Indicates whether CPT codes for medication administration services will be listed."
+    "question": "Will administration code(s) be provided for the medication?",
+    "context": "Dispensing/Administration Information section. Indicates if CPT/HCPCS codes for administration will be included."
   },
   "Provider Admin T.9": {
     "name": "Provider Admin T.9",
     "type": "text",
     "page": 2,
     "field_label": "CPT:",
-    "question": "What are the CPT administration codes?",
-    "context": "Specific CPT codes used for billing medication administration services, if applicable."
+    "question": "What are the CPT administration code(s)?",
+    "context": "Dispensing/Administration Information section. Sub-question for specific CPT codes for medication administration."
   },
   "Provider Admin T.11A": {
     "name": "Provider Admin T.11A",
     "type": "text",
     "page": 2,
     "field_label": "Address:",
-    "question": "What is the administration address?",
-    "context": "Street address of the location where the medication will be administered."
+    "question": "What is the address for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Address for the facility where medication is administered."
   },
   "Provider Admin T.13": {
     "name": "Provider Admin T.13",
     "type": "text",
     "page": 2,
     "field_label": "City:",
-    "question": "What is the city of administration?",
-    "context": "City of the location where the medication will be administered."
+    "question": "What is the city for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. City for the administering facility's address."
   },
   "Provider Admin T.14": {
     "name": "Provider Admin T.14",
     "type": "text",
     "page": 2,
     "field_label": "State:",
-    "question": "What is the state of administration?",
-    "context": "State of the location where the medication will be administered."
+    "question": "What is the state for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. State for the administering facility's address."
   },
   "Provider Admin T.15": {
     "name": "Provider Admin T.15",
     "type": "text",
     "page": 2,
     "field_label": "ZIP:",
-    "question": "What is the ZIP code of administration?",
-    "context": "ZIP code of the location where the medication will be administered."
+    "question": "What is the ZIP code for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. ZIP code for the administering facility's address."
   },
   "Provider Admin T.16": {
     "name": "Provider Admin T.16",
     "type": "text",
     "page": 2,
     "field_label": "Phone:",
-    "question": "What is the phone number of the administration site?",
-    "context": "Contact phone number for the location where the medication will be administered."
+    "question": "What is the phone number for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Phone number for the administering facility."
   },
   "Provider Admin T.17A": {
     "name": "Provider Admin T.17A",
     "type": "text",
     "page": 2,
     "field_label": "Fax:",
-    "question": "What is the fax number of the administration site?",
-    "context": "Contact fax number for the location where the medication will be administered."
+    "question": "What is the fax number for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Fax number for the administering facility."
   },
   "Provider Admin T.18": {
     "name": "Provider Admin T.18",
     "type": "text",
     "page": 2,
     "field_label": "TIN:",
-    "question": "What is the Tax Identification Number (TIN) of the administration site?",
-    "context": "Taxpayer identification for the entity administering the medication, used for billing."
+    "question": "What is the Tax Identification Number (TIN) for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Financial identifier for the administering entity."
   },
   "Provider Admin T.19": {
     "name": "Provider Admin T.19",
     "type": "text",
     "page": 2,
     "field_label": "PIN:",
-    "question": "What is the Provider Identification Number (PIN) of the administration site?",
-    "context": "Specific provider identifier for the entity administering the medication."
+    "question": "What is the Provider Identification Number (PIN) for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Unique identifier assigned by the payer to the provider."
   },
   "Provider Admin T.20": {
     "name": "Provider Admin T.20",
     "type": "text",
     "page": 2,
     "field_label": "NPI:",
-    "question": "What is the NPI (National Provider Identifier) of the administration site?",
-    "context": "Unique national identifier for the healthcare provider administering the medication."
+    "question": "What is the National Provider Identifier (NPI) for the administering facility/provider?",
+    "context": "Dispensing/Administration Information section. Unique identifier for the healthcare provider/facility."
   },
   "Provider Admin CB.21": {
     "name": "Provider Admin CB.21",
     "type": "checkbox",
     "page": 2,
     "field_label": "Outpatient Dialysis Center",
-    "question": "Will the medication be dispensed/administered at an Outpatient Dialysis Center?",
-    "context": "Indicates the specific healthcare setting for medication dispensing or administration."
+    "question": "Will the medication be dispensed from an outpatient dialysis center?",
+    "context": "Dispensing Provider Information section. Specifies source of dispensed medication for the patient."
   },
   "Provider Admin CB.22": {
     "name": "Provider Admin CB.22",
     "type": "checkbox",
     "page": 2,
     "field_label": "Physician’s Office",
-    "question": "Will the medication be dispensed/administered at a Physician’s Office?",
-    "context": "Indicates the specific healthcare setting for medication dispensing or administration."
+    "question": "Will the medication be dispensed from a physician's office?",
+    "context": "Dispensing Provider Information section. Specifies source of dispensed medication for the patient."
   },
   "Provider Admin CB.23.0.0": {
     "name": "Provider Admin CB.23.0.0",
     "type": "checkbox",
     "page": 2,
     "field_label": "Retail Pharmacy",
-    "question": "Will the medication be dispensed/administered at a Retail Pharmacy?",
-    "context": "Indicates the specific dispensing location for the medication."
+    "question": "Will the medication be dispensed from a retail pharmacy?",
+    "context": "Dispensing Provider Information section. Specifies source of dispensed medication for the patient."
   },
   "Provider Admin CB.24.0.0": {
     "name": "Provider Admin CB.24.0.0",
     "type": "checkbox",
     "page": 2,
     "field_label": "Specialty Pharmacy",
-    "question": "Will the medication be dispensed/administered at a Specialty Pharmacy?",
-    "context": "Indicates the specific dispensing location for complex or high-cost medications."
+    "question": "Will the medication be dispensed from a specialty pharmacy?",
+    "context": "Dispensing Provider Information section. Specifies source of dispensed medication for the patient."
   },
   "Provider Admin CB.25": {
     "name": "Provider Admin CB.25",
     "type": "checkbox",
     "page": 2,
     "field_label": "Mail Order",
-    "question": "Will the medication be dispensed/administered via Mail Order?",
-    "context": "Indicates the method of medication dispensing, typically for maintenance drugs."
+    "question": "Will the medication be dispensed via mail order?",
+    "context": "Dispensing Provider Information section. Specifies source of dispensed medication for the patient."
   },
   "Provider Admin CB.26": {
     "name": "Provider Admin CB.26",
     "type": "checkbox",
     "page": 2,
     "field_label": "Other:",
-    "question": "Will the medication be dispensed/administered at an 'Other' location?",
-    "context": "Allows for specification of a dispensing/administration location not listed above."
+    "question": "Will the medication be dispensed from another type of facility/provider not listed?",
+    "context": "Dispensing Provider Information section. Catch-all option for other dispensing locations."
   },
   "Provider Admin T.27": {
     "name": "Provider Admin T.27",
     "type": "text",
     "page": 2,
     "field_label": "Other:",
-    "question": "Please specify the 'Other' dispensing/administration location.",
-    "context": "Detailed explanation required if the 'Other' dispensing/administration option is selected."
+    "question": "If 'Other' dispensing location is selected, please specify.",
+    "context": "Dispensing Provider Information section. Sub-question dependent on 'Other' checkbox. Details alternate dispensing location."
   },
   "Provider Admin T.28": {
     "name": "Provider Admin T.28",
@@ -645,15 +645,15 @@
     "page": 2,
     "field_label": "Name:",
     "question": "What is the name of the dispensing provider/pharmacy?",
-    "context": "Name of the entity responsible for dispensing the requested medication."
+    "context": "Dispensing Provider Information section. Name of the entity dispensing the medication."
   },
   "Provider Admin T.29a": {
     "name": "Provider Admin T.29a",
     "type": "text",
     "page": 2,
     "field_label": "Address:",
-    "question": "What is the address of the dispensing provider/pharmacy?",
-    "context": "Street address of the entity responsible for dispensing the medication."
+    "question": "What is the street address of the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Address of the entity dispensing the medication."
   },
   "Provider Admin T.30a": {
     "name": "Provider Admin T.30a",
@@ -661,7 +661,7 @@
     "page": 2,
     "field_label": "City:",
     "question": "What is the city of the dispensing provider/pharmacy?",
-    "context": "City of the entity responsible for dispensing the medication."
+    "context": "Dispensing Provider Information section. City of the entity dispensing the medication."
   },
   "Provider Admin T.31": {
     "name": "Provider Admin T.31",
@@ -669,7 +669,7 @@
     "page": 2,
     "field_label": "State:",
     "question": "What is the state of the dispensing provider/pharmacy?",
-    "context": "State of the entity responsible for dispensing the medication."
+    "context": "Dispensing Provider Information section. State of the entity dispensing the medication."
   },
   "Provider Admin T.32": {
     "name": "Provider Admin T.32",
@@ -677,47 +677,47 @@
     "page": 2,
     "field_label": "ZIP:",
     "question": "What is the ZIP code of the dispensing provider/pharmacy?",
-    "context": "ZIP code of the entity responsible for dispensing the medication."
+    "context": "Dispensing Provider Information section. ZIP code of the entity dispensing the medication."
   },
   "Provider Admin T.33": {
     "name": "Provider Admin T.33",
     "type": "text",
     "page": 2,
     "field_label": "Phone:",
-    "question": "What is the phone number of the dispensing provider/pharmacy?",
-    "context": "Contact phone number for the entity dispensing the medication."
+    "question": "What is the phone number for the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Phone number for the dispensing entity."
   },
   "Provider Admin T.34": {
     "name": "Provider Admin T.34",
     "type": "text",
     "page": 2,
     "field_label": "Fax:",
-    "question": "What is the fax number of the dispensing provider/pharmacy?",
-    "context": "Contact fax number for the entity dispensing the medication."
+    "question": "What is the fax number for the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Fax number for the dispensing entity."
   },
   "Provider Admin T.35": {
     "name": "Provider Admin T.35",
     "type": "text",
     "page": 2,
     "field_label": "TIN:",
-    "question": "What is the Tax Identification Number (TIN) of the dispensing provider/pharmacy?",
-    "context": "Taxpayer identification for the entity dispensing the medication, used for billing."
+    "question": "What is the Tax Identification Number (TIN) for the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Financial identifier for the dispensing entity."
   },
   "Provider Admin T.36": {
     "name": "Provider Admin T.36",
     "type": "text",
     "page": 2,
     "field_label": "PIN:",
-    "question": "What is the Provider Identification Number (PIN) of the dispensing provider/pharmacy?",
-    "context": "Specific provider identifier for the entity dispensing the medication."
+    "question": "What is the Provider Identification Number (PIN) for the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Unique identifier assigned by the payer to the dispensing entity."
   },
   "Provider Admin T.37": {
     "name": "Provider Admin T.37",
     "type": "text",
     "page": 2,
     "field_label": "NPI:",
-    "question": "What is the NPI (National Provider Identifier) of the dispensing provider/pharmacy?",
-    "context": "Unique national identifier for the healthcare provider dispensing the medication."
+    "question": "What is the National Provider Identifier (NPI) for the dispensing provider/pharmacy?",
+    "context": "Dispensing Provider Information section. Unique identifier for the dispensing entity."
   },
   "CB60": {
     "name": "CB60",
@@ -725,7 +725,7 @@
     "page": 2,
     "field_label": "Riabni (rituximab-arrx)",
     "question": "Is Riabni (rituximab-arrx) the requested product?",
-    "context": "Selection of the specific rituximab biosimilar product requested for prior authorization."
+    "context": "Product Information section. Identifies the specific Rituximab product requested for prior authorization."
   },
   "CB61": {
     "name": "CB61",
@@ -733,7 +733,7 @@
     "page": 2,
     "field_label": "Rituxan (rituximab)",
     "question": "Is Rituxan (rituximab) the requested product?",
-    "context": "Selection of the original rituximab product requested for prior authorization."
+    "context": "Product Information section. Identifies the specific Rituximab product requested for prior authorization."
   },
   "CB62": {
     "name": "CB62",
@@ -741,7 +741,7 @@
     "page": 2,
     "field_label": "Ruxience (rituximab-pvvr)",
     "question": "Is Ruxience (rituximab-pvvr) the requested product?",
-    "context": "Selection of a specific rituximab biosimilar product requested for prior authorization."
+    "context": "Product Information section. Identifies the specific Rituximab biosimilar requested for prior authorization."
   },
   "CB63": {
     "name": "CB63",
@@ -749,55 +749,55 @@
     "page": 2,
     "field_label": "Truxima (rituximab-abbs)",
     "question": "Is Truxima (rituximab-abbs) the requested product?",
-    "context": "Selection of a specific rituximab biosimilar product requested for prior authorization."
+    "context": "Product Information section. Identifies the specific Rituximab biosimilar requested for prior authorization."
   },
   "T64": {
     "name": "T64",
     "type": "text",
     "page": 2,
     "field_label": "Dose:",
-    "question": "What is the prescribed dose of the requested medication?",
-    "context": "Details of the medication dosage, crucial for treatment plan review and approval."
+    "question": "What is the requested dose of the medication?",
+    "context": "Product Information section. Specifies the quantity of medication to be administered per dose."
   },
   "T65": {
     "name": "T65",
     "type": "text",
     "page": 2,
     "field_label": "Directions for Use:",
-    "question": "What are the directions for using the medication?",
-    "context": "Instructions for medication administration, including frequency and route."
+    "question": "What are the directions for using the requested medication?",
+    "context": "Product Information section. Provides instructions for medication administration, including frequency and route."
   },
   "T66": {
     "name": "T66",
     "type": "text",
     "page": 2,
     "field_label": "HCPCS Code:",
-    "question": "What is the HCPCS code for the requested product/service?",
-    "context": "Healthcare Common Procedure Coding System code for billing the specific medication or service."
+    "question": "What is the HCPCS (Healthcare Common Procedure Coding System) code for the requested product/service?",
+    "context": "Product Information section. Standardized code for medical procedures, services, or supplies."
   },
   "T67": {
     "name": "T67",
     "type": "text",
     "page": 2,
     "field_label": "Primary ICD Code:",
-    "question": "What is the primary ICD code for the patient's diagnosis?",
-    "context": "Primary International Classification of Diseases code supporting the medical necessity of the request."
+    "question": "What is the patient's primary ICD (International Classification of Diseases) code for their diagnosis?",
+    "context": "Diagnosis Information section. Primary medical diagnosis code supporting the precertification request."
   },
   "CB68": {
     "name": "CB68",
     "type": "checkbox",
     "page": 2,
     "field_label": "Other ICD Code:",
-    "question": "Are there any other relevant ICD codes?",
-    "context": "Indicates if additional International Classification of Diseases codes are applicable to the patient's diagnosis."
+    "question": "Is there another ICD code applicable to the patient's diagnosis?",
+    "context": "Diagnosis Information section. Indicates if additional diagnostic codes will be provided for clinical context."
   },
   "T69": {
     "name": "T69",
     "type": "text",
     "page": 2,
     "field_label": "Other ICD Code:",
-    "question": "What are the other applicable ICD codes?",
-    "context": "Additional International Classification of Diseases codes providing further diagnostic context."
+    "question": "What is the patient's other applicable ICD code?",
+    "context": "Diagnosis Information section. Sub-question dependent on CB68. Provides secondary diagnosis codes."
   },
   "CB70": {
     "name": "CB70",
@@ -805,7 +805,7 @@
     "page": 2,
     "field_label": "Yes",
     "question": "Has the patient had prior therapy with the requested product within the last 365 days?",
-    "context": "Determines if the patient has previously used the requested drug within a year, impacting approval."
+    "context": "Clinical Information (Initiation) section. Inquires about recent use of the requested drug for patient history."
   },
   "CB71": {
     "name": "CB71",
@@ -813,111 +813,111 @@
     "page": 2,
     "field_label": "No",
     "question": "Has the patient not had prior therapy with the requested product within the last 365 days?",
-    "context": "Indicates no prior use of the requested drug within a year, relevant for initial approval criteria."
+    "context": "Clinical Information (Initiation) section. Inquires about recent use of the requested drug for patient history."
   },
   "CB72": {
     "name": "CB72",
     "type": "checkbox",
     "page": 2,
     "field_label": "No",
-    "question": "Has the patient NOT had a trial and failure of any rituximab biosimilars?",
-    "context": "Indicates whether the patient has attempted and failed preferred biosimilar treatments."
+    "question": "Has the patient not had a trial and failure of any of the listed rituximab biosimilars?",
+    "context": "Clinical Information (Initiation) section. Evaluates if patient has tried preferred biosimilars before requesting non-preferred."
   },
   "CB73": {
     "name": "CB73",
     "type": "checkbox",
     "page": 2,
     "field_label": "Ruxience (rituximab-pvvr)",
-    "question": "Was Ruxience (rituximab-pvvr) tried and failed?",
-    "context": "Specific inquiry about the trial and failure of the preferred biosimilar Ruxience."
+    "question": "Has the patient had a trial and failure of Ruxience (rituximab-pvvr)?",
+    "context": "Clinical Information (Initiation) section. Sub-question if patient failed specific preferred rituximab biosimilar."
   },
   "CB74": {
     "name": "CB74",
     "type": "checkbox",
     "page": 2,
     "field_label": "Truxima (rituximab-abbs)",
-    "question": "Was Truxima (rituximab-abbs) tried and failed?",
-    "context": "Specific inquiry about the trial and failure of the preferred biosimilar Truxima."
+    "question": "Has the patient had a trial and failure of Truxima (rituximab-abbs)?",
+    "context": "Clinical Information (Initiation) section. Sub-question if patient failed specific preferred rituximab biosimilar."
   },
   "T75": {
     "name": "T75",
     "type": "text",
     "page": 2,
     "field_label": "When was the member’s trial and failure of the preferred drug?",
-    "question": "When did the patient's trial and failure of the preferred drug occur?",
-    "context": "Date of the clinical trial and documented failure of the previously preferred medication."
+    "question": "When did the member's trial and failure of the preferred drug occur?",
+    "context": "Clinical Information (Initiation) section. Date of unsuccessful treatment with a preferred biosimilar."
   },
   "T76": {
     "name": "T76",
     "type": "text",
     "page": 2,
     "field_label": "Please describe the nature of the failure of the preferred drug",
-    "question": "Please describe how the preferred drug failed.",
-    "context": "Detailed explanation of why the patient's prior therapy with the preferred drug was unsuccessful."
+    "question": "Please describe the nature of the failure of the preferred drug for the patient.",
+    "context": "Clinical Information (Initiation) section. Details clinical reason for prior preferred therapy failure (e.g., lack of efficacy)."
   },
   "CB77": {
     "name": "CB77",
     "type": "checkbox",
     "page": 2,
     "field_label": "No",
-    "question": "Has the patient NOT had an adverse reaction to any rituximab biosimilars?",
-    "context": "Indicates whether the patient has experienced adverse reactions to preferred biosimilar treatments."
+    "question": "Has the patient not had an adverse reaction to any of the listed rituximab biosimilars?",
+    "context": "Clinical Information (Initiation) section. Evaluates if patient had adverse reactions to preferred biosimilars."
   },
   "CB78": {
     "name": "CB78",
     "type": "checkbox",
     "page": 2,
     "field_label": "Ruxience (rituximab-pvvr)",
-    "question": "Did the patient have an adverse reaction to Ruxience (rituximab-pvvr)?",
-    "context": "Specific inquiry about adverse reaction to the preferred biosimilar Ruxience."
+    "question": "Has the patient had an adverse reaction to Ruxience (rituximab-pvvr)?",
+    "context": "Clinical Information (Initiation) section. Sub-question if patient experienced adverse reaction to specific preferred biosimilar."
   },
   "CB79": {
     "name": "CB79",
     "type": "checkbox",
     "page": 2,
     "field_label": "Truxima (rituximab-abbs)",
-    "question": "Did the patient have an adverse reaction to Truxima (rituximab-abbs)?",
-    "context": "Specific inquiry about adverse reaction to the preferred biosimilar Truxima."
+    "question": "Has the patient had an adverse reaction to Truxima (rituximab-abbs)?",
+    "context": "Clinical Information (Initiation) section. Sub-question if patient experienced adverse reaction to specific preferred biosimilar."
   },
   "T80": {
     "name": "T80",
     "type": "text",
     "page": 2,
     "field_label": "When was the member’s adverse reaction to the preferred drug?",
-    "question": "When did the patient's adverse reaction to the preferred drug occur?",
-    "context": "Date of the patient's documented adverse reaction to the previously preferred medication."
+    "question": "When did the member's adverse reaction to the preferred drug occur?",
+    "context": "Clinical Information (Initiation) section. Date of adverse event with a preferred biosimilar, if applicable."
   },
   "T81": {
     "name": "T81",
     "type": "text",
     "page": 2,
     "field_label": "Please describe the nature of the adverse reaction to the preferred drug",
-    "question": "Please describe the nature of the patient's adverse reaction to the preferred drug.",
-    "context": "Detailed explanation of the type and severity of the adverse reaction experienced by the patient."
+    "question": "Please describe the nature of the adverse reaction experienced by the patient to the preferred drug.",
+    "context": "Clinical Information (Initiation) section. Details clinical reason for adverse reaction to previous preferred therapy."
   },
   "T84": {
     "name": "T84",
     "type": "text",
     "page": 2,
     "field_label": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred biosimilar products when indicated for the patient’s diagnosis?",
-    "question": "Are there any contraindications or medical reasons preventing the patient from using preferred rituximab biosimilars?",
-    "context": "Requires detailed justification if preferred biosimilars are not being used due to medical reasons."
+    "question": "Are there any contraindications or medical reasons preventing the patient from using the preferred biosimilar products? If so, please explain.",
+    "context": "Clinical Information (Initiation) section. Justification for not using preferred biosimilars due to medical necessity."
   },
   "CB82": {
     "name": "CB82",
     "type": "checkbox",
     "page": 2,
     "field_label": "Ruxience (rituximab-pvvr)",
-    "question": "Is Ruxience (rituximab-pvvr) contraindicated for the patient?",
-    "context": "Indicates if Ruxience, a preferred biosimilar, is medically unsuitable due to contraindications."
+    "question": "Is Ruxience (rituximab-pvvr) contraindicated or medically unsuitable for the patient?",
+    "context": "Clinical Information (Initiation) section. Sub-question for specific preferred biosimilar contraindication details."
   },
   "CB83": {
     "name": "CB83",
     "type": "checkbox",
     "page": 2,
     "field_label": "Truxima (rituximab-abbs)",
-    "question": "Is Truxima (rituximab-abbs) contraindicated for the patient?",
-    "context": "Indicates if Truxima, a preferred biosimilar, is medically unsuitable due to contraindications."
+    "question": "Is Truxima (rituximab-abbs) contraindicated or medically unsuitable for the patient?",
+    "context": "Clinical Information (Initiation) section. Sub-question for specific preferred biosimilar contraindication details."
   },
   "CB86": {
     "name": "CB86",
@@ -925,8 +925,7 @@
     "page": 3,
     "field_label": "Inflectra (infliximab-dyyb)",
     "question": "Has the patient had a trial and failure of Inflectra (infliximab-dyyb)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a non-preferred infliximab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Inflectra, a preferred biosimilar, occurred for this initiation request."
   },
   "CB87": {
     "name": "CB87",
@@ -934,8 +933,7 @@
     "page": 3,
     "field_label": "Renflexis (infliximab-abda)",
     "question": "Has the patient had a trial and failure of Renflexis (infliximab-abda)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a non-preferred infliximab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Renflexis, a preferred biosimilar, occurred for this initiation request."
   },
   "CB88": {
     "name": "CB88",
@@ -943,35 +941,31 @@
     "page": 3,
     "field_label": "Simponi Aria (golimumab)",
     "question": "Has the patient had a trial and failure of Simponi Aria (golimumab)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a non-preferred golimumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Simponi Aria, a preferred biologic, occurred for this initiation request."
   },
   "T89": {
     "name": "T89",
     "type": "text",
     "page": 3,
     "field_label": "When was the member’s trial and failure of the preferred drug?",
-    "question": "When did the patient's trial and failure of the listed preferred drug occur?",
-    "context": "Date of patient's prior therapy failure for a specific preferred drug, required for clinical justification.",
-    "value": ""
+    "question": "When did the patient's trial and failure of the preferred drug occur?",
+    "context": "Clinical history: Specifies the date of trial and failure, important for assessing recency and treatment progression. Dependent on prior checkbox selection."
   },
   "T90": {
     "name": "T90",
     "type": "text",
     "page": 3,
     "field_label": "Please describe the nature of the failure of the preferred drug",
-    "question": "Please describe the nature of the patient's failure of the preferred drug.",
-    "context": "Detailed explanation of why the patient's prior therapy with the preferred drug was unsuccessful.",
-    "value": ""
+    "question": "Describe the nature of the patient's failure with the preferred drug.",
+    "context": "Clinical history: Details why the preferred drug failed (e.g., lack of efficacy, progression). Dependent on prior checkbox selection."
   },
   "CB85": {
     "name": "CB85",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Has the patient NOT had a trial and failure of any of the listed infliximab or golimumab biosimilars?",
-    "context": "Indicates if the patient has not failed any specified non-preferred biosimilars (Inflectra, Renflexis, Simponi Aria).",
-    "value": "Off"
+    "question": "Has the patient NOT had a trial and failure of any specified rituximab biosimilars?",
+    "context": "Clinical history: Indicates if the patient has not undergone trial and failure of the listed preferred drugs."
   },
   "CB92": {
     "name": "CB92",
@@ -979,8 +973,7 @@
     "page": 3,
     "field_label": "Inflectra (infliximab-dyyb)",
     "question": "Has the patient had an adverse reaction to Inflectra (infliximab-dyyb)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a non-preferred infliximab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Inflectra, a preferred biosimilar."
   },
   "CB93": {
     "name": "CB93",
@@ -988,8 +981,7 @@
     "page": 3,
     "field_label": "Renflexis (infliximab-abda)",
     "question": "Has the patient had an adverse reaction to Renflexis (infliximab-abda)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a non-preferred infliximab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Renflexis, a preferred biosimilar."
   },
   "CB94": {
     "name": "CB94",
@@ -997,35 +989,31 @@
     "page": 3,
     "field_label": "Simponi Aria (golimumab)",
     "question": "Has the patient had an adverse reaction to Simponi Aria (golimumab)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a non-preferred golimumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Simponi Aria, a preferred biologic."
   },
   "T95": {
     "name": "T95",
     "type": "text",
     "page": 3,
     "field_label": "When was the member’s adverse reaction to the preferred drug?",
-    "question": "When did the patient's adverse reaction to the listed preferred drug occur?",
-    "context": "Date of patient's adverse reaction to a specific preferred drug, required for clinical justification.",
-    "value": ""
+    "question": "When did the patient's adverse reaction to the preferred drug occur?",
+    "context": "Clinical history: Specifies the date of the adverse reaction, crucial for causality and treatment plan adjustments. Dependent on prior checkbox selection."
   },
   "T96a": {
     "name": "T96a",
     "type": "text",
     "page": 3,
     "field_label": "Please describe the nature of the adverse reaction to the preferred drug",
-    "question": "Please describe the nature of the patient's adverse reaction to the preferred drug.",
-    "context": "Detailed explanation of the adverse reaction experienced by the patient to the preferred drug.",
-    "value": ""
+    "question": "Describe the nature of the patient's adverse reaction to the preferred drug.",
+    "context": "Clinical history: Details the type and severity of the adverse reaction to the preferred drug. Dependent on prior checkbox selection."
   },
   "CB91": {
     "name": "CB91",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Has the patient NOT had an adverse reaction to any of the listed infliximab or golimumab biosimilars?",
-    "context": "Indicates if the patient has not experienced an adverse reaction to specified non-preferred biosimilars.",
-    "value": "Off"
+    "question": "Has the patient NOT had an adverse reaction to any specified rituximab biosimilars?",
+    "context": "Clinical history: Indicates if the patient has not experienced adverse reactions to the listed preferred drugs."
   },
   "CB98a": {
     "name": "CB98a",
@@ -1033,8 +1021,7 @@
     "page": 3,
     "field_label": "Enbrel (etanercept)",
     "question": "Has the patient had a trial and failure of Enbrel (etanercept)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred etanercept product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Enbrel, a preferred biologic, occurred for this initiation request."
   },
   "CB99a": {
     "name": "CB99a",
@@ -1042,8 +1029,7 @@
     "page": 3,
     "field_label": "Humira (adalimumab)",
     "question": "Has the patient had a trial and failure of Humira (adalimumab)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred adalimumab product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Humira, a preferred biologic, occurred for this initiation request."
   },
   "CB100a": {
     "name": "CB100a",
@@ -1051,8 +1037,7 @@
     "page": 3,
     "field_label": "Idacio (adalimumab-aacf)",
     "question": "Has the patient had a trial and failure of Idacio (adalimumab-aacf)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred adalimumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Idacio, a preferred biosimilar, occurred for this initiation request."
   },
   "CB101a": {
     "name": "CB101a",
@@ -1060,8 +1045,7 @@
     "page": 3,
     "field_label": "Rinvoq (upadacitinib)",
     "question": "Has the patient had a trial and failure of Rinvoq (upadacitinib)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred upadacitinib product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Rinvoq, a preferred JAK inhibitor, occurred for this initiation request."
   },
   "CB102a": {
     "name": "CB102a",
@@ -1069,8 +1053,7 @@
     "page": 3,
     "field_label": "Tyenne SC (tocilizumab-aazg)",
     "question": "Has the patient had a trial and failure of Tyenne SC (tocilizumab-aazg)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred tocilizumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Tyenne SC, a preferred biosimilar, occurred for this initiation request."
   },
   "CB103a": {
     "name": "CB103a",
@@ -1078,35 +1061,31 @@
     "page": 3,
     "field_label": "Xeljanz/Xeljanz XR (tofacitinib)",
     "question": "Has the patient had a trial and failure of Xeljanz/Xeljanz XR (tofacitinib)?",
-    "context": "Clinical information for initiation, indicating prior therapy with a preferred tofacitinib product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if a trial and failure of Xeljanz/Xeljanz XR, a preferred JAK inhibitor, occurred for this initiation request."
   },
   "T104": {
     "name": "T104",
     "type": "text",
     "page": 3,
     "field_label": "When was the member’s trial and failure of the preferred drug?",
-    "question": "When did the patient's trial and failure of the listed preferred drug occur?",
-    "context": "Date of patient's prior therapy failure for a specific preferred drug, required for clinical justification.",
-    "value": ""
+    "question": "When did the patient's trial and failure of the preferred drug occur?",
+    "context": "Clinical history: Specifies the date of trial and failure, important for assessing recency and treatment progression. Dependent on prior checkbox selection."
   },
   "T105": {
     "name": "T105",
     "type": "text",
     "page": 3,
     "field_label": "Please describe the nature of the failure of the preferred drug",
-    "question": "Please describe the nature of the patient's failure of the preferred drug.",
-    "context": "Detailed explanation of why the patient's prior therapy with the preferred drug was unsuccessful.",
-    "value": ""
+    "question": "Describe the nature of the patient's failure with the preferred drug.",
+    "context": "Clinical history: Details why the preferred drug failed (e.g., lack of efficacy, progression). Dependent on prior checkbox selection."
   },
   "CB97": {
     "name": "CB97",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Has the patient NOT had a trial and failure of any of the listed preferred drugs?",
-    "context": "Indicates if the patient has not failed any specified preferred drugs (Enbrel, Humira, Idacio, Rinvoq, Tyenne, Xeljanz).",
-    "value": ""
+    "question": "Has the patient NOT had a trial and failure of any specified preferred products?",
+    "context": "Clinical history: Indicates if the patient has not undergone trial and failure of the listed preferred drugs."
   },
   "CB107z": {
     "name": "CB107z",
@@ -1114,8 +1093,7 @@
     "page": 3,
     "field_label": "Enbrel (etanercept)",
     "question": "Has the patient had an adverse reaction to Enbrel (etanercept)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred etanercept product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Enbrel, a preferred biologic."
   },
   "CB108z": {
     "name": "CB108z",
@@ -1123,8 +1101,7 @@
     "page": 3,
     "field_label": "Humira (adalimumab)",
     "question": "Has the patient had an adverse reaction to Humira (adalimumab)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred adalimumab product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Humira, a preferred biologic."
   },
   "CB109z": {
     "name": "CB109z",
@@ -1132,8 +1109,7 @@
     "page": 3,
     "field_label": "Idacio (adalimumab-aacf)",
     "question": "Has the patient had an adverse reaction to Idacio (adalimumab-aacf)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred adalimumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Idacio, a preferred biosimilar."
   },
   "CB110z": {
     "name": "CB110z",
@@ -1141,8 +1117,7 @@
     "page": 3,
     "field_label": "Rinvoq (upadacitinib)",
     "question": "Has the patient had an adverse reaction to Rinvoq (upadacitinib)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred upadacitinib product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Rinvoq, a preferred JAK inhibitor."
   },
   "CB111z": {
     "name": "CB111z",
@@ -1150,8 +1125,7 @@
     "page": 3,
     "field_label": "Tyenne SC (tocilizumab-aazg)",
     "question": "Has the patient had an adverse reaction to Tyenne SC (tocilizumab-aazg)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred tocilizumab biosimilar. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Tyenne SC, a preferred biosimilar."
   },
   "CB112z": {
     "name": "CB112z",
@@ -1159,44 +1133,39 @@
     "page": 3,
     "field_label": "Xeljanz/Xeljanz XR (tofacitinib)",
     "question": "Has the patient had an adverse reaction to Xeljanz/Xeljanz XR (tofacitinib)?",
-    "context": "Clinical information for initiation, indicating an adverse reaction to a preferred tofacitinib product. Part of a sub-question.",
-    "value": "Off"
+    "context": "Clinical history: Indicates if the patient experienced an adverse reaction to Xeljanz/Xeljanz XR, a preferred JAK inhibitor."
   },
   "T113": {
     "name": "T113",
     "type": "text",
     "page": 3,
     "field_label": "When was the member’s adverse reaction to the preferred drug?",
-    "question": "When did the patient's adverse reaction to the listed preferred drug occur?",
-    "context": "Date of patient's adverse reaction to a specific preferred drug, required for clinical justification.",
-    "value": ""
+    "question": "When did the patient's adverse reaction to the preferred drug occur?",
+    "context": "Clinical history: Specifies the date of the adverse reaction, crucial for causality and treatment plan adjustments. Dependent on prior checkbox selection."
   },
   "T114": {
     "name": "T114",
     "type": "text",
     "page": 3,
     "field_label": "Please describe the nature of the adverse reaction to the preferred drug",
-    "question": "Please describe the nature of the patient's adverse reaction to the preferred drug.",
-    "context": "Detailed explanation of the adverse reaction experienced by the patient to the preferred drug.",
-    "value": ""
+    "question": "Describe the nature of the patient's adverse reaction to the preferred drug.",
+    "context": "Clinical history: Details the type and severity of the adverse reaction to the preferred drug. Dependent on prior checkbox selection."
   },
   "CB106z": {
     "name": "CB106z",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Has the patient NOT had an adverse reaction to any of the listed preferred drugs?",
-    "context": "Indicates if the patient has not experienced an adverse reaction to specified preferred drugs (Enbrel, Humira, Idacio, Rinvoq, Tyenne, Xeljanz).",
-    "value": "Off"
+    "question": "Has the patient NOT had an adverse reaction to any specified preferred products?",
+    "context": "Clinical history: Indicates if the patient has not experienced adverse reactions to the listed preferred drugs."
   },
   "T118": {
     "name": "T118",
     "type": "text",
     "page": 3,
     "field_label": "Please explain if there are any contraindications or other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient’s diagnosis?",
-    "question": "Are there contraindications or medical reasons preventing the patient from using the listed preferred products for their diagnosis?",
-    "context": "Open-text explanation of clinical reasons or contraindications for not using specified preferred biosimilars (Inflectra, Renflexis, Simponi Aria).",
-    "value": ""
+    "question": "Are there medical reasons or contraindications preventing the patient from using the preferred products for their diagnosis?",
+    "context": "Clinical justification: Provides medical reasons for not using preferred rituximab biosimilars (Ruxience/Truxima) due to contraindications or other factors."
   },
   "CB115z": {
     "name": "CB115z",
@@ -1204,8 +1173,7 @@
     "page": 3,
     "field_label": "Inflectra (infliximab-dyyb)",
     "question": "Is Inflectra (infliximab-dyyb) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred biosimilar if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Inflectra, a preferred biosimilar, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB116z": {
     "name": "CB116z",
@@ -1213,8 +1181,7 @@
     "page": 3,
     "field_label": "Renflexis (infliximab-abda)",
     "question": "Is Renflexis (infliximab-abda) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred biosimilar if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Renflexis, a preferred biosimilar, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB117z": {
     "name": "CB117z",
@@ -1222,17 +1189,15 @@
     "page": 3,
     "field_label": "Simponi Aria (golimumab)",
     "question": "Is Simponi Aria (golimumab) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred biosimilar if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Simponi Aria, a preferred biologic, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "T125": {
     "name": "T125",
     "type": "text",
     "page": 3,
     "field_label": "Please explain if there are contraindications or any other medical reason(s) that the patient cannot use any of the following preferred products when indicated for the patient’s diagnosis?",
-    "question": "Are there contraindications or medical reasons preventing the patient from using the listed preferred products for their diagnosis?",
-    "context": "Open-text explanation of clinical reasons or contraindications for not using specified preferred drugs.",
-    "value": ""
+    "question": "Are there medical reasons or contraindications preventing the patient from using the listed preferred products for their diagnosis?",
+    "context": "Clinical justification: Provides medical reasons for not using other preferred biologics/JAK inhibitors due to contraindications or other factors."
   },
   "CB119z": {
     "name": "CB119z",
@@ -1240,8 +1205,7 @@
     "page": 3,
     "field_label": "Enbrel (etanercept)",
     "question": "Is Enbrel (etanercept) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Enbrel, a preferred biologic, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB120z": {
     "name": "CB120z",
@@ -1249,8 +1213,7 @@
     "page": 3,
     "field_label": "Humira (adalimumab)",
     "question": "Is Humira (adalimumab) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Humira, a preferred biologic, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB121z": {
     "name": "CB121z",
@@ -1258,8 +1221,7 @@
     "page": 3,
     "field_label": "Idacio (adalimumab-aacf)",
     "question": "Is Idacio (adalimumab-aacf) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Idacio, a preferred biosimilar, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB122z": {
     "name": "CB122z",
@@ -1267,8 +1229,7 @@
     "page": 3,
     "field_label": "Rinvoq (upadacitinib)",
     "question": "Is Rinvoq (upadacitinib) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Rinvoq, a preferred JAK inhibitor, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB123z": {
     "name": "CB123z",
@@ -1276,8 +1237,7 @@
     "page": 3,
     "field_label": "Tyenne SC (tocilizumab-aazg)",
     "question": "Is Tyenne SC (tocilizumab-aazg) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Tyenne SC, a preferred biosimilar, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB124z": {
     "name": "CB124z",
@@ -1285,26 +1245,23 @@
     "page": 3,
     "field_label": "Xeljanz/Xeljanz XR (tofacitinib)",
     "question": "Is Xeljanz/Xeljanz XR (tofacitinib) contraindicated or medically unsuitable for the patient?",
-    "context": "Option to select a specific preferred drug if contraindicated or medically unsuitable for the patient's diagnosis.",
-    "value": "Off"
+    "context": "Clinical justification: Indicates if Xeljanz/Xeljanz XR, a preferred JAK inhibitor, is medically unsuitable or contraindicated for the patient's diagnosis."
   },
   "CB96.4.0": {
     "name": "CB96.4.0",
     "type": "checkbox",
     "page": 3,
     "field_label": "Yes",
-    "question": "Will Rituxan (rituximab) be used concomitantly with apremilast, tofacitinib, or other biologic DMARDs?",
-    "context": "Indicates whether Rituxan will be co-administered with other biologic or small molecule DMARDs, important for treatment plan.",
-    "value": "Off"
+    "question": "Will Rituxan (rituximab) be used concomitantly with other specified DMARDs?",
+    "context": "Treatment plan: Specifies if Rituxan will be co-administered with other immunosuppressants, crucial for drug interaction assessment."
   },
   "CB98": {
     "name": "CB98",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Will Rituxan (rituximab) NOT be used concomitantly with apremilast, tofacitinib, or other biologic DMARDs?",
-    "context": "Indicates whether Rituxan will NOT be co-administered with other biologic or small molecule DMARDs, important for treatment plan.",
-    "value": ""
+    "question": "Will Rituxan (rituximab) NOT be used concomitantly with other specified DMARDs?",
+    "context": "Treatment plan: Specifies if Rituxan will not be co-administered with other immunosuppressants, crucial for drug interaction assessment."
   },
   "CB99.0": {
     "name": "CB99.0",
@@ -1312,8 +1269,7 @@
     "page": 3,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of Philadelphia chromosome-negative acute lymphoid leukemia (ALL)?",
-    "context": "Confirms specific diagnosis of Philadelphia chromosome-negative acute lymphoid leukemia, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Diagnosis verification: Confirms a specific ALL subtype, critical for medical necessity of Rituxan therapy."
   },
   "CB100.0": {
     "name": "CB100.0",
@@ -1321,26 +1277,23 @@
     "page": 3,
     "field_label": "No",
     "question": "Does the patient NOT have a documented diagnosis of Philadelphia chromosome-negative acute lymphoid leukemia (ALL)?",
-    "context": "Indicates absence of Philadelphia chromosome-negative acute lymphoid leukemia, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Diagnosis verification: Confirms absence of a specific ALL subtype, critical for medical necessity of Rituxan therapy."
   },
   "CB101.0": {
     "name": "CB101.0",
     "type": "checkbox",
     "page": 3,
     "field_label": "Yes",
-    "question": "Is Rituxan (rituximab) being used as induction/consolidation therapy?",
-    "context": "Confirms the treatment phase (induction/consolidation) for Rituxan use in acute lymphoid leukemia.",
-    "value": "Off"
+    "question": "Is Rituxan (rituximab) being used as induction/consolidation therapy for ALL?",
+    "context": "Treatment indication: Specifies the phase of ALL treatment, indicating Rituxan's role in the regimen."
   },
   "CB102.0": {
     "name": "CB102.0",
     "type": "checkbox",
     "page": 3,
     "field_label": "No",
-    "question": "Is Rituxan (rituximab) NOT being used as induction/consolidation therapy?",
-    "context": "Indicates Rituxan's use is not for induction/consolidation phase in acute lymphoid leukemia.",
-    "value": "Off"
+    "question": "Is Rituxan (rituximab) NOT being used as induction/consolidation therapy for ALL?",
+    "context": "Treatment indication: Specifies the phase of ALL treatment, indicating Rituxan's role in the regimen."
   },
   "CB103": {
     "name": "CB103",
@@ -1348,8 +1301,7 @@
     "page": 3,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of refractory autoimmune hemolytic anemia?",
-    "context": "Confirms specific diagnosis of refractory autoimmune hemolytic anemia, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Diagnosis verification: Confirms a diagnosis of refractory AIHA, a specific indication for Rituxan."
   },
   "CB104": {
     "name": "CB104",
@@ -1357,26 +1309,23 @@
     "page": 3,
     "field_label": "No",
     "question": "Does the patient NOT have a documented diagnosis of refractory autoimmune hemolytic anemia?",
-    "context": "Indicates absence of refractory autoimmune hemolytic anemia, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Diagnosis verification: Confirms absence of a diagnosis of refractory AIHA, a specific indication for Rituxan."
   },
   "CB104a": {
     "name": "CB104a",
     "type": "checkbox",
     "page": 3,
     "field_label": "Wegener granulomatosis",
-    "question": "Does the patient have Wegener granulomatosis?",
-    "context": "Specific ANCA-associated vasculitides diagnosis, relevant for Rituxan approval in anti-neutrophil cytoplasmic antibody-associated vasculitides.",
-    "value": "Off"
+    "question": "Does the patient have Wegener granulomatosis (now Granulomatosis with Polyangiitis)?",
+    "context": "Specific diagnosis: Indicates a subtype of ANCA-associated vasculitides, crucial for treatment protocol adherence."
   },
   "CB104b": {
     "name": "CB104b",
     "type": "checkbox",
     "page": 3,
     "field_label": "Churg-Strauss syndrome",
-    "question": "Does the patient have Churg-Strauss syndrome?",
-    "context": "Specific ANCA-associated vasculitides diagnosis, relevant for Rituxan approval in anti-neutrophil cytoplasmic antibody-associated vasculitides.",
-    "value": "Off"
+    "question": "Does the patient have Churg-Strauss syndrome (now Eosinophilic Granulomatosis with Polyangiitis)?",
+    "context": "Specific diagnosis: Indicates a subtype of ANCA-associated vasculitides, crucial for treatment protocol adherence."
   },
   "CB104c": {
     "name": "CB104c",
@@ -1384,8 +1333,7 @@
     "page": 3,
     "field_label": "microscopic polyangiitis",
     "question": "Does the patient have microscopic polyangiitis?",
-    "context": "Specific ANCA-associated vasculitides diagnosis, relevant for Rituxan approval in anti-neutrophil cytoplasmic antibody-associated vasculitides.",
-    "value": "Off"
+    "context": "Specific diagnosis: Indicates a subtype of ANCA-associated vasculitides, crucial for treatment protocol adherence."
   },
   "CB104d": {
     "name": "CB104d",
@@ -1393,8 +1341,7 @@
     "page": 3,
     "field_label": "pauci-immune glomerulonephritis",
     "question": "Does the patient have pauci-immune glomerulonephritis?",
-    "context": "Specific ANCA-associated vasculitides diagnosis, relevant for Rituxan approval in anti-neutrophil cytoplasmic antibody-associated vasculitides.",
-    "value": "Off"
+    "context": "Specific diagnosis: Indicates a subtype of ANCA-associated vasculitides, crucial for treatment protocol adherence."
   },
   "CB105": {
     "name": "CB105",
@@ -1402,8 +1349,7 @@
     "page": 3,
     "field_label": "Yes",
     "question": "Will Rituxan (rituximab) be given in conjunction with glucocorticoids?",
-    "context": "Confirms co-administration of Rituxan with glucocorticoids for ANCA-associated vasculitides treatment.",
-    "value": "Off"
+    "context": "Treatment plan: Specifies if Rituxan will be co-administered with glucocorticoids, crucial for combination therapy assessment."
   },
   "CB106": {
     "name": "CB106",
@@ -1411,8 +1357,7 @@
     "page": 3,
     "field_label": "No",
     "question": "Will Rituxan (rituximab) NOT be given in conjunction with glucocorticoids?",
-    "context": "Indicates no co-administration of Rituxan with glucocorticoids for ANCA-associated vasculitides treatment.",
-    "value": ""
+    "context": "Treatment plan: Specifies if Rituxan will not be co-administered with glucocorticoids, crucial for combination therapy assessment."
   },
   "CB106a": {
     "name": "CB106a",
@@ -1420,8 +1365,7 @@
     "page": 3,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of corticosteroid-refractory autoimmune blistering disease?",
-    "context": "Confirms specific diagnosis of corticosteroid-refractory autoimmune blistering disease, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Diagnosis verification: Confirms diagnosis of corticosteroid-refractory autoimmune blistering disease, a specific indication for Rituxan."
   },
   "CB107": {
     "name": "CB107",
@@ -1429,8 +1373,7 @@
     "page": 3,
     "field_label": "pemphigus vulgaris",
     "question": "Does the patient have pemphigus vulgaris?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB108": {
     "name": "CB108",
@@ -1438,8 +1381,7 @@
     "page": 3,
     "field_label": "pemphigus folliaceus",
     "question": "Does the patient have pemphigus folliaceus?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB109": {
     "name": "CB109",
@@ -1447,8 +1389,7 @@
     "page": 3,
     "field_label": "bullous pemphigoid",
     "question": "Does the patient have bullous pemphigoid?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB110": {
     "name": "CB110",
@@ -1456,8 +1397,7 @@
     "page": 3,
     "field_label": "cicatricial pemphigoid",
     "question": "Does the patient have cicatricial pemphigoid?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB111": {
     "name": "CB111",
@@ -1465,8 +1405,7 @@
     "page": 3,
     "field_label": "epidermolysis bullosa acquisita",
     "question": "Does the patient have epidermolysis bullosa acquisita?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB112": {
     "name": "CB112",
@@ -1474,8 +1413,7 @@
     "page": 3,
     "field_label": "paraneoplastic pemphigus",
     "question": "Does the patient have paraneoplastic pemphigus?",
-    "context": "Specific autoimmune blistering disease diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of autoimmune blistering disease for treatment validation."
   },
   "CB113": {
     "name": "CB113",
@@ -1483,8 +1421,7 @@
     "page": 3,
     "field_label": "None of the above",
     "question": "Does the patient have none of the listed autoimmune blistering diseases?",
-    "context": "Indicates that the patient's autoimmune blistering disease is not among the specific options provided.",
-    "value": "Off"
+    "context": "Specific diagnosis: Indicates that none of the specific autoimmune blistering disease subtypes apply."
   },
   "CB106b": {
     "name": "CB106b",
@@ -1492,8 +1429,7 @@
     "page": 3,
     "field_label": "No",
     "question": "Does the patient NOT have a documented diagnosis of corticosteroid-refractory autoimmune blistering disease?",
-    "context": "Indicates absence of corticosteroid-refractory autoimmune blistering disease, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Diagnosis verification: Confirms absence of diagnosis of corticosteroid-refractory autoimmune blistering disease."
   },
   "CB114": {
     "name": "CB114",
@@ -1501,8 +1437,7 @@
     "page": 3,
     "field_label": "AIDS-related B-cell lymphoma",
     "question": "Does the patient have AIDS-related B-cell lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB115": {
     "name": "CB115",
@@ -1510,8 +1445,7 @@
     "page": 3,
     "field_label": "Burkitt lymphoma",
     "question": "Does the patient have Burkitt lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB116": {
     "name": "CB116",
@@ -1519,8 +1453,7 @@
     "page": 3,
     "field_label": "Diffuse large B-cell lymphoma",
     "question": "Does the patient have Diffuse large B-cell lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB117": {
     "name": "CB117",
@@ -1528,8 +1461,7 @@
     "page": 3,
     "field_label": "Follicular lymphoma",
     "question": "Does the patient have Follicular lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB118": {
     "name": "CB118",
@@ -1537,8 +1469,7 @@
     "page": 3,
     "field_label": "Gastric MALT lymphoma",
     "question": "Does the patient have Gastric MALT lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": "Off"
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB119": {
     "name": "CB119",
@@ -1546,8 +1477,7 @@
     "page": 3,
     "field_label": "High-grade B-Cell lymphoma",
     "question": "Does the patient have High-grade B-Cell lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB120": {
     "name": "CB120",
@@ -1555,8 +1485,7 @@
     "page": 3,
     "field_label": "Mantle cell lymphoma",
     "question": "Does the patient have Mantle cell lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB121": {
     "name": "CB121",
@@ -1564,8 +1493,7 @@
     "page": 3,
     "field_label": "Nodal marginal zone lymphoma",
     "question": "Does the patient have Nodal marginal zone lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB122": {
     "name": "CB122",
@@ -1573,8 +1501,7 @@
     "page": 3,
     "field_label": "Nongastric MALT lymphoma",
     "question": "Does the patient have Nongastric MALT lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB123": {
     "name": "CB123",
@@ -1582,8 +1509,7 @@
     "page": 3,
     "field_label": "Primary cutaneous B-cell lymphomas",
     "question": "Does the patient have Primary cutaneous B-cell lymphomas?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB124": {
     "name": "CB124",
@@ -1591,17 +1517,15 @@
     "page": 3,
     "field_label": "Splenic marginal zone lymphoma",
     "question": "Does the patient have Splenic marginal zone lymphoma?",
-    "context": "Specific B-cell lymphoma diagnosis, relevant for Rituxan approval.",
-    "value": ""
+    "context": "Specific diagnosis: Identifies the subtype of B-cell lymphoma, relevant for treatment indication."
   },
   "CB125": {
     "name": "CB125",
     "type": "checkbox",
     "page": 3,
     "field_label": "Other:",
-    "question": "Does the patient have an 'Other' unspecified B-cell lymphoma?",
-    "context": "Option to indicate B-cell lymphoma type not listed, requires further specification in the text field.",
-    "value": "Off"
+    "question": "Does the patient have another type of B-cell lymphoma not listed?",
+    "context": "Specific diagnosis: Allows for specification of other B-cell lymphoma subtypes not explicitly listed."
   },
   "T126": {
     "name": "T126",
@@ -1609,24 +1533,23 @@
     "page": 3,
     "field_label": "Other:",
     "question": "Please specify the 'Other' B-cell lymphoma type.",
-    "context": "Open-text field to describe the specific 'Other' B-cell lymphoma diagnosis not listed above.",
-    "value": ""
+    "context": "Specific diagnosis: Text field to describe any other B-cell lymphoma subtype if 'Other' is selected."
   },
   "CB127": {
     "name": "CB127",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Does the patient have a documented diagnosis of multicentric Castleman's disease (angiofollicular lymph node hyperplasia)?",
-    "context": "Confirms the primary diagnosis of multicentric Castleman's disease for treatment approval."
+    "question": "Does the patient have a documented diagnosis of multicentric Castleman's disease?",
+    "context": "Clinical criteria for Castleman's disease diagnosis, required for treatment approval."
   },
   "CB128": {
     "name": "CB128",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Does the patient not have a documented diagnosis of multicentric Castleman's disease (angiofollicular lymph node hyperplasia)?",
-    "context": "Indicates absence of multicentric Castleman's disease, influencing treatment eligibility."
+    "question": "Does the patient not have a documented diagnosis of multicentric Castleman's disease?",
+    "context": "Indicates absence of Castleman's disease, affecting treatment eligibility."
   },
   "CB129": {
     "name": "CB129",
@@ -1634,23 +1557,23 @@
     "page": 4,
     "field_label": "leptomeningeal metastases from lymphoma",
     "question": "Is the patient's central nervous system lymphoma characterized by leptomeningeal metastases?",
-    "context": "Specifies a particular type of central nervous system lymphoma affecting treatment protocol."
+    "context": "Specific subtype of CNS lymphoma, informing treatment approach."
   },
   "CB130": {
     "name": "CB130",
     "type": "checkbox",
     "page": 4,
     "field_label": "primary CNS lymphoma",
-    "question": "Is the patient's central nervous system lymphoma a primary CNS lymphoma?",
-    "context": "Specifies the primary form of central nervous system lymphoma for diagnosis."
+    "question": "Does the patient have primary CNS lymphoma?",
+    "context": "Specific subtype of CNS lymphoma, informing treatment approach."
   },
   "CB131": {
     "name": "CB131",
     "type": "checkbox",
     "page": 4,
     "field_label": "none of the above",
-    "question": "Does none of the listed options apply to the patient's central nervous system lymphoma?",
-    "context": "Indicates if other or unspecified types of CNS lymphoma are present."
+    "question": "Are none of the listed central nervous system lymphoma types applicable to the patient?",
+    "context": "Indicates the patient's CNS lymphoma type is not among the specified options."
   },
   "CB132": {
     "name": "CB132",
@@ -1658,7 +1581,7 @@
     "page": 4,
     "field_label": "chronic lymphocytic leukemia (CLL)",
     "question": "Does the patient have chronic lymphocytic leukemia (CLL)?",
-    "context": "Identifies the specific type of chronic leukemia for which treatment is requested."
+    "context": "Specific subtype of leukemia for treatment eligibility assessment."
   },
   "CB133": {
     "name": "CB133",
@@ -1666,15 +1589,15 @@
     "page": 4,
     "field_label": "small lymphocytic leukemia",
     "question": "Does the patient have small lymphocytic leukemia?",
-    "context": "Identifies the specific type of small lymphocytic leukemia for which treatment is requested."
+    "context": "Specific subtype of leukemia for treatment eligibility assessment."
   },
   "CB134": {
     "name": "CB134",
     "type": "checkbox",
     "page": 4,
     "field_label": "none of the above",
-    "question": "Does none of the listed options apply to the patient's chronic or small lymphocytic leukemia?",
-    "context": "Indicates if other or unspecified types of chronic/small lymphocytic leukemia are present."
+    "question": "Are none of the listed chronic or small lymphocytic leukemia types applicable to the patient?",
+    "context": "Indicates the patient's leukemia type is not among the specified options."
   },
   "CB135": {
     "name": "CB135",
@@ -1682,7 +1605,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of cryoglobulinemia?",
-    "context": "Confirms the primary diagnosis of cryoglobulinemia for treatment approval."
+    "context": "Clinical criteria for cryoglobulinemia diagnosis, required for treatment approval."
   },
   "CB136": {
     "name": "CB136",
@@ -1690,39 +1613,39 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of cryoglobulinemia?",
-    "context": "Indicates absence of cryoglobulinemia, influencing treatment eligibility."
+    "context": "Indicates absence of cryoglobulinemia, affecting treatment eligibility."
   },
   "CB139": {
     "name": "CB139",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Is there clinical documentation that the patient's treatment with corticosteroids and other immunosuppressive agents for cryoglobulinemia was ineffective?",
-    "context": "Verifies documented failure of prior therapies for cryoglobulinemia before considering Rituxan."
+    "question": "Is there clinical documentation that treatment with corticosteroids and other immunosuppressive agents was ineffective for cryoglobulinemia?",
+    "context": "Required for prior authorization if standard therapies have failed for cryoglobulinemia."
   },
   "CB140": {
     "name": "CB140",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Is there no clinical documentation that the patient's treatment with corticosteroids and other immunosuppressive agents for cryoglobulinemia was ineffective?",
-    "context": "Indicates prior therapies may still be effective, or lack of documented failure for cryoglobulinemia."
+    "question": "Is there no clinical documentation that treatment with corticosteroids and other immunosuppressive agents was ineffective for cryoglobulinemia?",
+    "context": "Indicates if standard therapies have not failed for cryoglobulinemia."
   },
   "CB144": {
     "name": "CB144",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Is there documentation that Rituxan (rituximab) is being used as a last-resort treatment for chronic graft versus host disease (GVHD)?",
-    "context": "Confirms Rituxan's use as a last-resort option for chronic GVHD, supporting medical necessity."
+    "question": "Is there documentation that Rituxan (rituximab) is being used as last-resort treatment for chronic graft versus host disease (GVHD)?",
+    "context": "Indicates the patient's medical necessity for Rituxan after other therapies have failed for GVHD."
   },
   "CB145": {
     "name": "CB145",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Is there no documentation that Rituxan (rituximab) is being used as a last-resort treatment for chronic graft versus host disease (GVHD)?",
-    "context": "Indicates Rituxan may not be considered last-resort for chronic GVHD, affecting approval."
+    "question": "Is there no documentation that Rituxan (rituximab) is being used as last-resort treatment for chronic graft versus host disease (GVHD)?",
+    "context": "Indicates if Rituxan is not being used as a last-resort treatment for GVHD."
   },
   "CB141": {
     "name": "CB141",
@@ -1730,7 +1653,7 @@
     "page": 4,
     "field_label": "relapsed hairy cell leukemia",
     "question": "Does the patient have relapsed hairy cell leukemia?",
-    "context": "Specifies if the patient's hairy cell leukemia has relapsed, influencing treatment strategy."
+    "context": "Specific stage of hairy cell leukemia, affecting treatment protocol."
   },
   "CB142": {
     "name": "CB142",
@@ -1738,23 +1661,23 @@
     "page": 4,
     "field_label": "refractory hairy cell leukemia",
     "question": "Does the patient have refractory hairy cell leukemia?",
-    "context": "Specifies if the patient's hairy cell leukemia is refractory to prior treatments."
+    "context": "Specific stage of hairy cell leukemia, affecting treatment protocol."
   },
   "CB143": {
     "name": "CB143",
     "type": "checkbox",
     "page": 4,
     "field_label": "none of the above",
-    "question": "Does none of the listed options apply to the patient's hairy cell leukemia?",
-    "context": "Indicates if other or unspecified types of hairy cell leukemia are present."
+    "question": "Are none of the listed hairy cell leukemia types applicable to the patient?",
+    "context": "Indicates the patient's hairy cell leukemia type is not among the specified options."
   },
   "CB137": {
     "name": "CB137",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Is there documentation that Rituxan (rituximab) is being used for treatment or prevention (desensitization) of highly sensitized patients with antibody mediated rejection in heart or other solid organ transplant recipients?",
-    "context": "Verifies documented use of Rituxan for desensitization in highly sensitized transplant patients."
+    "question": "Is there documentation that Rituxan (rituximab) is being used for treatment or prevention of antibody mediated rejection in heart or other solid organ transplant recipients?",
+    "context": "Clinical justification for Rituxan use in transplant patients, addressing rejection."
   },
   "CB146": {
     "name": "CB146",
@@ -1762,7 +1685,7 @@
     "page": 4,
     "field_label": "heart transplant recipient",
     "question": "Is the patient a heart transplant recipient?",
-    "context": "Identifies the specific type of organ transplant received by the patient."
+    "context": "Specific type of organ transplant, indicating clinical context for Rituxan use."
   },
   "CB147": {
     "name": "CB147",
@@ -1770,15 +1693,15 @@
     "page": 4,
     "field_label": "other solid organ transplant recipient",
     "question": "Is the patient an other solid organ transplant recipient?",
-    "context": "Identifies if the patient received a solid organ transplant other than a heart."
+    "context": "Specific type of organ transplant, indicating clinical context for Rituxan use."
   },
   "CB138": {
     "name": "CB138",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Is there no documentation that Rituxan (rituximab) is being used for treatment or prevention (desensitization) of highly sensitized patients with antibody mediated rejection in heart or other solid organ transplant recipients?",
-    "context": "Indicates absence of documented Rituxan use for desensitization in transplant patients."
+    "question": "Is there no documentation that Rituxan (rituximab) is being used for treatment or prevention of antibody mediated rejection in heart or other solid organ transplant recipients?",
+    "context": "Indicates if Rituxan is not being used for transplant rejection treatment or prevention."
   },
   "CB148": {
     "name": "CB148",
@@ -1786,7 +1709,7 @@
     "page": 4,
     "field_label": "Bavencio (avelumab)",
     "question": "Was Bavencio (avelumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Bavencio was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB149": {
     "name": "CB149",
@@ -1794,7 +1717,7 @@
     "page": 4,
     "field_label": "Imfinzi (durvalumab)",
     "question": "Was Imfinzi (durvalumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Imfinzi was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB150": {
     "name": "CB150",
@@ -1802,7 +1725,7 @@
     "page": 4,
     "field_label": "Keytruda (pembrolizumab)",
     "question": "Was Keytruda (pembrolizumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Keytruda was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB151": {
     "name": "CB151",
@@ -1810,7 +1733,7 @@
     "page": 4,
     "field_label": "Opdivo (nivolumab)",
     "question": "Was Opdivo (nivolumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Opdivo was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB152": {
     "name": "CB152",
@@ -1818,7 +1741,7 @@
     "page": 4,
     "field_label": "Tecentriq (atezolizumab)",
     "question": "Was Tecentriq (atezolizumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Tecentriq was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB153": {
     "name": "CB153",
@@ -1826,23 +1749,23 @@
     "page": 4,
     "field_label": "Yervoy (ipilimumab)",
     "question": "Was Yervoy (ipilimumab) the immune checkpoint inhibitor that caused the encephalitis?",
-    "context": "Identifies if Yervoy was the specific agent causing immune checkpoint inhibitor-related encephalitis."
+    "context": "Identifies the specific immune checkpoint inhibitor related to the encephalitis."
   },
   "CB154": {
     "name": "CB154",
     "type": "checkbox",
     "page": 4,
     "field_label": "Other:",
-    "question": "Was an immune checkpoint inhibitor other than those listed the cause of the encephalitis?",
-    "context": "Allows for specification of other immune checkpoint inhibitors causing encephalitis."
+    "question": "Was an 'Other' immune checkpoint inhibitor the cause of the encephalitis?",
+    "context": "Allows specification of an immune checkpoint inhibitor not explicitly listed."
   },
   "T155": {
     "name": "T155",
     "type": "text",
     "page": 4,
     "field_label": "Other:",
-    "question": "Please specify the other immune checkpoint inhibitor that caused the encephalitis.",
-    "context": "Text field to specify the name of an unlisted immune checkpoint inhibitor."
+    "question": "Please specify the 'Other' immune checkpoint inhibitor that caused the encephalitis.",
+    "context": "Text field to capture the name of the 'Other' immune checkpoint inhibitor for specificity."
   },
   "CB156": {
     "name": "CB156",
@@ -1850,7 +1773,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of refractory immune or idiopathic thrombocytopenic purpura (ITP)?",
-    "context": "Confirms the diagnosis of refractory ITP, a key eligibility criterion for treatment."
+    "context": "Clinical criteria for ITP diagnosis, crucial for determining treatment necessity."
   },
   "CB158": {
     "name": "CB158",
@@ -1858,7 +1781,7 @@
     "page": 4,
     "field_label": "refractory immune thrombocytopenic purpura",
     "question": "Does the patient have refractory immune thrombocytopenic purpura?",
-    "context": "Specifies if the patient's ITP is refractory to previous treatments."
+    "context": "Specific sub-type of ITP, impacting treatment choice and rationale."
   },
   "CB159": {
     "name": "CB159",
@@ -1866,7 +1789,7 @@
     "page": 4,
     "field_label": "idiopathic thrombocytopenic purpura (ITP)",
     "question": "Does the patient have idiopathic thrombocytopenic purpura (ITP)?",
-    "context": "Specifies if the patient's ITP is idiopathic in nature."
+    "context": "Specific sub-type of ITP, impacting treatment choice and rationale."
   },
   "CB157": {
     "name": "CB157",
@@ -1874,7 +1797,7 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of refractory immune or idiopathic thrombocytopenic purpura (ITP)?",
-    "context": "Indicates absence of documented refractory ITP, affecting treatment eligibility."
+    "context": "Indicates absence of ITP diagnosis, affecting treatment eligibility."
   },
   "CB160": {
     "name": "CB160",
@@ -1882,7 +1805,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Is Rituxan (rituximab) being used as rejection prophylaxis in sensitized kidney transplant recipients with donor specific antibodies?",
-    "context": "Determines if Rituxan is used for rejection prevention in specific kidney transplant cases."
+    "context": "Indicates Rituxan's use in preventing organ rejection in high-risk kidney transplant patients."
   },
   "CB161": {
     "name": "CB161",
@@ -1890,7 +1813,7 @@
     "page": 4,
     "field_label": "No",
     "question": "Is Rituxan (rituximab) not being used as rejection prophylaxis in sensitized kidney transplant recipients with donor specific antibodies?",
-    "context": "Indicates Rituxan is not for rejection prevention in specific kidney transplant cases."
+    "context": "Indicates if Rituxan is not being used for kidney transplant rejection prophylaxis."
   },
   "CB162": {
     "name": "CB162",
@@ -1898,7 +1821,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of lymphocyte-predominant Hodgkin's lymphoma?",
-    "context": "Confirms the primary diagnosis of lymphocyte-predominant Hodgkin's lymphoma."
+    "context": "Clinical criteria for lymphocyte-predominant Hodgkin's lymphoma, critical for authorization."
   },
   "CB163": {
     "name": "CB163",
@@ -1906,39 +1829,39 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of lymphocyte-predominant Hodgkin's lymphoma?",
-    "context": "Indicates absence of documented lymphocyte-predominant Hodgkin's lymphoma."
+    "context": "Indicates absence of lymphocyte-predominant Hodgkin's lymphoma diagnosis."
   },
   "CB164": {
     "name": "CB164",
     "type": "checkbox",
     "page": 4,
     "field_label": "Relapsing-remitting MS (RRMS)",
-    "question": "Has the patient been diagnosed with Relapsing-remitting Multiple Sclerosis (RRMS)?",
-    "context": "Identifies the specific type of Multiple Sclerosis diagnosis for treatment indication."
+    "question": "Does the patient have Relapsing-remitting MS (RRMS)?",
+    "context": "Specific subtype of Multiple Sclerosis, guiding appropriate treatment selection."
   },
   "CB165": {
     "name": "CB165",
     "type": "checkbox",
     "page": 4,
     "field_label": "Secondary-progressive MS (SPMS)",
-    "question": "Has the patient been diagnosed with Secondary-progressive Multiple Sclerosis (SPMS)?",
-    "context": "Identifies the specific type of Multiple Sclerosis diagnosis for treatment indication."
+    "question": "Does the patient have Secondary-progressive MS (SPMS)?",
+    "context": "Specific subtype of Multiple Sclerosis, guiding appropriate treatment selection."
   },
   "CB166": {
     "name": "CB166",
     "type": "checkbox",
     "page": 4,
     "field_label": "Primary-progressive MS (PPMS)",
-    "question": "Has the patient been diagnosed with Primary-progressive Multiple Sclerosis (PPMS)?",
-    "context": "Identifies the specific type of Multiple Sclerosis diagnosis for treatment indication."
+    "question": "Does the patient have Primary-progressive MS (PPMS)?",
+    "context": "Specific subtype of Multiple Sclerosis, guiding appropriate treatment selection."
   },
   "CB167": {
     "name": "CB167",
     "type": "checkbox",
     "page": 4,
     "field_label": "Progressive-relapsing MS (PRMS)",
-    "question": "Has the patient been diagnosed with Progressive-relapsing Multiple Sclerosis (PRMS)?",
-    "context": "Identifies the specific type of Multiple Sclerosis diagnosis for treatment indication."
+    "question": "Does the patient have Progressive-relapsing MS (PRMS)?",
+    "context": "Specific subtype of Multiple Sclerosis, guiding appropriate treatment selection."
   },
   "CB168": {
     "name": "CB168",
@@ -1946,7 +1869,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Has the patient discontinued other medications used for treating MS (not including Ampyra)?",
-    "context": "Determines if other MS medications (excluding Ampyra) have been discontinued."
+    "context": "Checks for prior medication history for MS, indicating treatment progression or failure."
   },
   "CB169": {
     "name": "CB169",
@@ -1954,7 +1877,7 @@
     "page": 4,
     "field_label": "No",
     "question": "Has the patient not discontinued other medications used for treating MS (not including Ampyra)?",
-    "context": "Indicates if other MS medications (excluding Ampyra) are still being used or not discontinued."
+    "context": "Indicates if previous MS medications are still being used or not discontinued."
   },
   "CB170": {
     "name": "CB170",
@@ -1962,7 +1885,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of muscle-specific tyrosine kinase myasthenia gravis (MuSK-MG)?",
-    "context": "Confirms the specific diagnosis of MuSK-MG for treatment consideration."
+    "context": "Clinical criteria for MuSK-MG diagnosis, required for treatment approval."
   },
   "CB172": {
     "name": "CB172",
@@ -1970,7 +1893,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Has the patient had an unsatisfactory response to initial immunotherapy for MuSK-MG?",
-    "context": "Determines if initial immunotherapy for MuSK-MG was unsuccessful, supporting further treatment."
+    "context": "Evaluates prior treatment effectiveness for MuSK-MG, justifying alternative therapies."
   },
   "CB173": {
     "name": "CB173",
@@ -1978,7 +1901,7 @@
     "page": 4,
     "field_label": "No",
     "question": "Has the patient not had an unsatisfactory response to initial immunotherapy for MuSK-MG?",
-    "context": "Indicates initial immunotherapy for MuSK-MG was satisfactory or not attempted yet."
+    "context": "Indicates if initial immunotherapy for MuSK-MG was satisfactory."
   },
   "CB171": {
     "name": "CB171",
@@ -1986,7 +1909,7 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of muscle-specific tyrosine kinase myasthenia gravis (MuSK-MG)?",
-    "context": "Indicates absence of documented MuSK-MG diagnosis."
+    "context": "Indicates absence of MuSK-MG diagnosis, affecting treatment eligibility."
   },
   "CB174": {
     "name": "CB174",
@@ -1994,7 +1917,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of neuromyelitis optica (Devic's disease)?",
-    "context": "Confirms the diagnosis of neuromyelitis optica for treatment consideration."
+    "context": "Clinical criteria for Devic's disease diagnosis, essential for treatment justification."
   },
   "CB175": {
     "name": "CB175",
@@ -2002,23 +1925,23 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of neuromyelitis optica (Devic's disease)?",
-    "context": "Indicates absence of documented neuromyelitis optica diagnosis."
+    "context": "Indicates absence of Devic's disease diagnosis, affecting treatment eligibility."
   },
   "CB176": {
     "name": "CB176",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Was the patient's treatment with at least one immunotherapy for neuromyelitis optica ineffective?",
-    "context": "Determines if previous immunotherapy for neuromyelitis optica was unsuccessful."
+    "question": "Was the treatment with at least one immunotherapy ineffective for neuromyelitis optica?",
+    "context": "Evaluates prior treatment effectiveness for Devic's disease, supporting new therapy."
   },
   "CB177": {
     "name": "CB177",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Was the patient's treatment with at least one immunotherapy for neuromyelitis optica not ineffective?",
-    "context": "Indicates previous immunotherapy for neuromyelitis optica was effective or not attempted."
+    "question": "Was the treatment with at least one immunotherapy not ineffective for neuromyelitis optica?",
+    "context": "Indicates if previous immunotherapy for neuromyelitis optica was effective."
   },
   "CB178": {
     "name": "CB178",
@@ -2026,7 +1949,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of opsoclonus-myoclonus-ataxia (OMA) associated with neuroblastoma?",
-    "context": "Confirms OMA diagnosis linked to neuroblastoma, essential for specific treatment."
+    "context": "Clinical criteria for OMA diagnosis with neuroblastoma, relevant for treatment."
   },
   "CB179": {
     "name": "CB179",
@@ -2034,71 +1957,71 @@
     "page": 4,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of opsoclonus-myoclonus-ataxia (OMA) associated with neuroblastoma?",
-    "context": "Indicates absence of OMA diagnosis associated with neuroblastoma."
+    "context": "Indicates absence of OMA diagnosis with neuroblastoma."
   },
   "CB180": {
     "name": "CB180",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Is the patient refractory to steroids, chemotherapy, and intravenous immunoglobulins for OMA?",
-    "context": "Determines if standard OMA treatments (steroids, chemo, IVIG) have failed, indicating refractoriness."
+    "question": "Is the patient refractory to steroids, chemotherapy and intravenous immunoglobulins for OMA?",
+    "context": "Indicates failure of standard OMA treatments, justifying alternative or advanced therapy."
   },
   "T189": {
     "name": "T189",
     "type": "text",
     "page": 4,
     "field_label": "Medication:",
-    "question": "What was the name of the medication tried for opsoclonus-myoclonus-ataxia?",
-    "context": "Records the name of previously attempted medication for OMA."
+    "question": "What was the name of the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Name of medication used to treat OMA, providing historical treatment data."
   },
   "T190": {
     "name": "T190",
     "type": "text",
     "page": 4,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date range for which the medication was tried?",
-    "context": "Records the start month of medication trial for OMA."
+    "question": "What is the start month (MM) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start month of the first medication used for OMA, for treatment duration assessment."
   },
   "T191": {
     "name": "T191",
     "type": "text",
     "page": 4,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date range for which the medication was tried?",
-    "context": "Records the start day of medication trial for OMA."
+    "question": "What is the start day (DD) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start day of the first medication used for OMA, for treatment duration assessment."
   },
   "T192": {
     "name": "T192",
     "type": "text",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date range for which the medication was tried?",
-    "context": "Records the start year of medication trial for OMA."
+    "question": "What is the start year (YYYY) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start year of the first medication used for OMA, for treatment duration assessment."
   },
   "T193": {
     "name": "T193",
     "type": "text",
     "page": 4,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the second date range for which the medication was tried?",
-    "context": "Records the end month of medication trial for OMA, if applicable."
+    "question": "What is the end month (MM) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End month of the first medication used for OMA, for treatment duration assessment."
   },
   "T194": {
     "name": "T194",
     "type": "text",
     "page": 4,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the second date range for which the medication was tried?",
-    "context": "Records the end day of medication trial for OMA, if applicable."
+    "question": "What is the end day (DD) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End day of the first medication used for OMA, for treatment duration assessment."
   },
   "T195": {
     "name": "T195",
     "type": "text",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the second date range for which the medication was tried?",
-    "context": "Records the end year of medication trial for OMA, if applicable."
+    "question": "What is the end year (YYYY) for the first medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End year of the first medication used for OMA, for treatment duration assessment."
   },
   "T196": {
     "name": "T196",
@@ -2106,79 +2029,79 @@
     "page": 4,
     "field_label": "Medication:",
     "question": "What was the name of the second medication tried for opsoclonus-myoclonus-ataxia?",
-    "context": "Records the name of another previously attempted medication for OMA."
+    "context": "Name of second medication used to treat OMA, providing historical treatment data."
   },
   "T197": {
     "name": "T197",
     "type": "text",
     "page": 4,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date range for which the second medication was tried?",
-    "context": "Records the start month of the second medication trial for OMA."
+    "question": "What is the start month (MM) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start month of the second medication used for OMA, for treatment duration assessment."
   },
   "T198": {
     "name": "T198",
     "type": "text",
     "page": 4,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date range for which the second medication was tried?",
-    "context": "Records the start day of the second medication trial for OMA."
+    "question": "What is the start day (DD) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start day of the second medication used for OMA, for treatment duration assessment."
   },
   "T199": {
     "name": "T199",
     "type": "text",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date range for which the second medication was tried?",
-    "context": "Records the start year of the second medication trial for OMA."
+    "question": "What is the start year (YYYY) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "Start year of the second medication used for OMA, for treatment duration assessment."
   },
   "T200": {
     "name": "T200",
     "type": "text",
     "page": 4,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the second date range for which the second medication was tried?",
-    "context": "Records the end month of the second medication trial for OMA, if applicable."
+    "question": "What is the end month (MM) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End month of the second medication used for OMA, for treatment duration assessment."
   },
   "T201": {
     "name": "T201",
     "type": "text",
     "page": 4,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the second date range for which the second medication was tried?",
-    "context": "Records the end day of the second medication trial for OMA, if applicable."
+    "question": "What is the end day (DD) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End day of the second medication used for OMA, for treatment duration assessment."
   },
   "T202": {
     "name": "T202",
     "type": "text",
     "page": 4,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the second date range for which the second medication was tried?",
-    "context": "Records the end year of the second medication trial for OMA, if applicable."
+    "question": "What is the end year (YYYY) for the second medication tried for opsoclonus-myoclonus-ataxia?",
+    "context": "End year of the second medication used for OMA, for treatment duration assessment."
   },
   "CB181": {
     "name": "CB181",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Is the patient not refractory to steroids, chemotherapy, and intravenous immunoglobulins for OMA?",
-    "context": "Indicates standard OMA treatments (steroids, chemo, IVIG) may still be effective."
+    "question": "Is the patient not refractory to steroids, chemotherapy and intravenous immunoglobulins for OMA?",
+    "context": "Indicates if standard OMA treatments (steroids, chemo, IVIG) have been effective."
   },
   "CB203": {
     "name": "CB203",
     "type": "checkbox",
     "page": 4,
     "field_label": "Yes",
-    "question": "Is Rituxan (rituximab) being used as treatment for post-transplant lymphoproliferative disorder?",
-    "context": "Determines if Rituxan is used to treat post-transplant lymphoproliferative disorder (PTLD)."
+    "question": "Is Rituxan (rituximab) being used as treatment of post-transplant lymphoproliferative disorder?",
+    "context": "Justifies Rituxan use for treating PTLD, ensuring medical necessity."
   },
   "CB204": {
     "name": "CB204",
     "type": "checkbox",
     "page": 4,
     "field_label": "No",
-    "question": "Is Rituxan (rituximab) not being used as treatment for post-transplant lymphoproliferative disorder?",
-    "context": "Indicates Rituxan is not for PTLD treatment, affecting approval."
+    "question": "Is Rituxan (rituximab) not being used as treatment of post-transplant lymphoproliferative disorder?",
+    "context": "Indicates if Rituxan is not being used to treat post-transplant lymphoproliferative disorder."
   },
   "CB205": {
     "name": "CB205",
@@ -2186,7 +2109,7 @@
     "page": 4,
     "field_label": "Yes",
     "question": "Is Rituxan (rituximab) being used as prophylaxis for Epstein-Barr virus (EBV) post-transplant lymphoproliferative disorder?",
-    "context": "Determines if Rituxan is used for EBV prophylaxis against PTLD in transplant patients."
+    "context": "Justifies Rituxan use for preventing EBV-associated PTLD, ensuring medical necessity."
   },
   "CB206": {
     "name": "CB206",
@@ -2194,31 +2117,31 @@
     "page": 4,
     "field_label": "No",
     "question": "Is Rituxan (rituximab) not being used as prophylaxis for Epstein-Barr virus (EBV) post-transplant lymphoproliferative disorder?",
-    "context": "Indicates Rituxan is not for EBV prophylaxis against PTLD, affecting approval."
+    "context": "Indicates if Rituxan is not being used for EBV-related PTLD prophylaxis."
   },
   "CB207": {
     "name": "CB207",
     "type": "checkbox",
     "page": 5,
     "field_label": "Mild",
-    "question": "Is the patient's rheumatoid arthritis classified as mild?",
-    "context": "Clinical assessment of rheumatoid arthritis severity at baseline in the clinical information section."
+    "question": "Is the patient's rheumatoid arthritis disease severity mild?",
+    "context": "Clinical information for Rheumatoid Arthritis, used to assess disease severity at the time of the request."
   },
   "CB208": {
     "name": "CB208",
     "type": "checkbox",
     "page": 5,
     "field_label": "Moderate",
-    "question": "Is the patient's rheumatoid arthritis classified as moderate?",
-    "context": "Clinical assessment of rheumatoid arthritis severity at baseline in the clinical information section."
+    "question": "Is the patient's rheumatoid arthritis disease severity moderate?",
+    "context": "Clinical information for Rheumatoid Arthritis, used to assess disease severity at the time of the request."
   },
   "CB209": {
     "name": "CB209",
     "type": "checkbox",
     "page": 5,
     "field_label": "Severe",
-    "question": "Is the patient's rheumatoid arthritis classified as severe?",
-    "context": "Clinical assessment of rheumatoid arthritis severity at baseline in the clinical information section."
+    "question": "Is the patient's rheumatoid arthritis disease severity severe?",
+    "context": "Clinical information for Rheumatoid Arthritis, used to assess disease severity at the time of the request."
   },
   "CB210": {
     "name": "CB210",
@@ -2226,7 +2149,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Is there evidence that the rheumatoid arthritis disease is active?",
-    "context": "Indicates current disease activity for rheumatoid arthritis to justify treatment initiation."
+    "context": "Primary clinical question for Rheumatoid Arthritis, indicating active disease state justifying treatment."
   },
   "CB211": {
     "name": "CB211",
@@ -2234,7 +2157,7 @@
     "page": 5,
     "field_label": "No",
     "question": "Is there no evidence that the rheumatoid arthritis disease is active?",
-    "context": "Indicates lack of current disease activity for rheumatoid arthritis, impacting treatment justification."
+    "context": "Primary clinical question for Rheumatoid Arthritis, indicating no active disease state."
   },
   "CB212": {
     "name": "CB212",
@@ -2242,7 +2165,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Will Rituxan (rituximab) be used in combination with methotrexate?",
-    "context": "Treatment plan detail for rheumatoid arthritis, assessing concomitant methotrexate therapy."
+    "context": "Sub-question for Rheumatoid Arthritis regarding concomitant therapy with methotrexate."
   },
   "CB213": {
     "name": "CB213",
@@ -2250,7 +2173,7 @@
     "page": 5,
     "field_label": "No",
     "question": "Will Rituxan (rituximab) not be used in combination with methotrexate?",
-    "context": "Treatment plan detail for rheumatoid arthritis, assessing absence of concomitant methotrexate therapy."
+    "context": "Sub-question for Rheumatoid Arthritis regarding concomitant therapy with methotrexate."
   },
   "CB214": {
     "name": "CB214",
@@ -2258,7 +2181,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Was treatment with methotrexate ineffective, not tolerated or contraindicated?",
-    "context": "Evaluates prior methotrexate therapy failure, intolerance, or contraindication for rheumatoid arthritis."
+    "context": "Sub-question for Rheumatoid Arthritis, assessing the outcome of prior methotrexate therapy."
   },
   "CB216": {
     "name": "CB216",
@@ -2266,7 +2189,7 @@
     "page": 5,
     "field_label": "ineffective",
     "question": "Was methotrexate treatment ineffective?",
-    "context": "Specific reason for prior methotrexate failure in rheumatoid arthritis, indicating lack of therapeutic response."
+    "context": "Reason for methotrexate failure in Rheumatoid Arthritis, determining eligibility for Rituxan based on prior therapy response."
   },
   "CB217": {
     "name": "CB217",
@@ -2274,7 +2197,7 @@
     "page": 5,
     "field_label": "not tolerated",
     "question": "Was methotrexate treatment not tolerated?",
-    "context": "Specific reason for prior methotrexate failure in rheumatoid arthritis, indicating adverse effects."
+    "context": "Reason for methotrexate failure in Rheumatoid Arthritis, determining eligibility for Rituxan based on patient tolerance."
   },
   "CB218": {
     "name": "CB218",
@@ -2282,15 +2205,15 @@
     "page": 5,
     "field_label": "contraindicated",
     "question": "Was methotrexate treatment contraindicated?",
-    "context": "Specific reason for prior methotrexate failure in rheumatoid arthritis, indicating medical unsuitability."
+    "context": "Reason for methotrexate failure in Rheumatoid Arthritis, determining eligibility for Rituxan based on contraindications."
   },
   "CB215": {
     "name": "CB215",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Was treatment with methotrexate not ineffective, not tolerated, or contraindicated?",
-    "context": "Evaluates success, tolerance, or suitability of prior methotrexate therapy for rheumatoid arthritis."
+    "question": "Was methotrexate treatment not ineffective, tolerated, or not contraindicated?",
+    "context": "Sub-question for Rheumatoid Arthritis, indicating no issues with prior methotrexate therapy."
   },
   "CB223": {
     "name": "CB223",
@@ -2298,7 +2221,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Was treatment with another conventional DMARD ineffective?",
-    "context": "Evaluates prior therapy failure with other conventional DMARDs for rheumatoid arthritis."
+    "context": "Sub-question for Rheumatoid Arthritis, assessing the outcome of prior conventional DMARD therapy."
   },
   "CB225": {
     "name": "CB225",
@@ -2306,7 +2229,7 @@
     "page": 5,
     "field_label": "azathioprine",
     "question": "Was azathioprine an ineffective conventional DMARD?",
-    "context": "Specific conventional DMARD that failed for rheumatoid arthritis, indicating prior treatment history."
+    "context": "Specific conventional DMARD failed for Rheumatoid Arthritis, influencing approval for Rituxan."
   },
   "CB226": {
     "name": "CB226",
@@ -2314,7 +2237,7 @@
     "page": 5,
     "field_label": "cyclosporine",
     "question": "Was cyclosporine an ineffective conventional DMARD?",
-    "context": "Specific conventional DMARD that failed for rheumatoid arthritis, indicating prior treatment history."
+    "context": "Specific conventional DMARD failed for Rheumatoid Arthritis, influencing approval for Rituxan."
   },
   "CB227": {
     "name": "CB227",
@@ -2322,7 +2245,7 @@
     "page": 5,
     "field_label": "hydroxychloroquine",
     "question": "Was hydroxychloroquine an ineffective conventional DMARD?",
-    "context": "Specific conventional DMARD that failed for rheumatoid arthritis, indicating prior treatment history."
+    "context": "Specific conventional DMARD failed for Rheumatoid Arthritis, influencing approval for Rituxan."
   },
   "CB228": {
     "name": "CB228",
@@ -2330,7 +2253,7 @@
     "page": 5,
     "field_label": "leflunomide",
     "question": "Was leflunomide an ineffective conventional DMARD?",
-    "context": "Specific conventional DMARD that failed for rheumatoid arthritis, indicating prior treatment history."
+    "context": "Specific conventional DMARD failed for Rheumatoid Arthritis, influencing approval for Rituxan."
   },
   "CB229": {
     "name": "CB229",
@@ -2338,7 +2261,7 @@
     "page": 5,
     "field_label": "sulfasalazine",
     "question": "Was sulfasalazine an ineffective conventional DMARD?",
-    "context": "Specific conventional DMARD that failed for rheumatoid arthritis, indicating prior treatment history."
+    "context": "Specific conventional DMARD failed for Rheumatoid Arthritis, influencing approval for Rituxan."
   },
   "CB224": {
     "name": "CB224",
@@ -2346,7 +2269,7 @@
     "page": 5,
     "field_label": "No",
     "question": "Was treatment with another conventional DMARD not ineffective?",
-    "context": "Evaluates success of prior therapy with other conventional DMARDs for rheumatoid arthritis."
+    "context": "Sub-question for Rheumatoid Arthritis, indicating no issues with other conventional DMARD therapy."
   },
   "CB281": {
     "name": "CB281",
@@ -2354,7 +2277,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of Sjögren's syndrome?",
-    "context": "Primary diagnostic criterion for Sjögren's syndrome, essential for treatment approval."
+    "context": "Primary clinical question for Sjögren syndrome, confirming the patient's diagnosis."
   },
   "CB282": {
     "name": "CB282",
@@ -2362,135 +2285,135 @@
     "page": 5,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of Sjögren's syndrome?",
-    "context": "Primary diagnostic criterion for Sjögren's syndrome, impacting treatment approval."
+    "context": "Primary clinical question for Sjögren syndrome, confirming absence of diagnosis."
   },
   "CB283": {
     "name": "CB283",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Was treatment with corticosteroids and other immunosuppressive agents ineffective?",
-    "context": "Evaluates prior therapy failure with corticosteroids or immunosuppressive agents for Sjögren's syndrome."
+    "question": "Was treatment with corticosteroids and other immunosuppressive agents ineffective for Sjögren's syndrome?",
+    "context": "Sub-question for Sjögren syndrome, assessing prior therapy response to standard agents."
   },
   "T285": {
     "name": "T285",
     "type": "text",
     "page": 5,
     "field_label": "Medication:",
-    "question": "What is the name of the first corticosteroid or immunosuppressive agent used?",
-    "context": "Details of specific prior failed medication for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the name of the corticosteroid or immunosuppressive agent that was used?",
+    "context": "Details for Sjögren syndrome, specifying the prior medication that was ineffective."
   },
   "T286": {
     "name": "T286",
     "type": "text",
     "page": 5,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date the first corticosteroid/immunosuppressive agent was used?",
-    "context": "Start month of prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the month of administration for the first specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T287": {
     "name": "T287",
     "type": "text",
     "page": 5,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date the first corticosteroid/immunosuppressive agent was used?",
-    "context": "Start day of prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the day of administration for the first specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T288": {
     "name": "T288",
     "type": "text",
     "page": 5,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date the first corticosteroid/immunosuppressive agent was used?",
-    "context": "Start year of prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the year of administration for the first specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T289": {
     "name": "T289",
     "type": "text",
     "page": 5,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date the second corticosteroid/immunosuppressive agent was used?",
-    "context": "Start month of a second prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the month of administration for the second specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T290": {
     "name": "T290",
     "type": "text",
     "page": 5,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date the second corticosteroid/immunosuppressive agent was used?",
-    "context": "Start day of a second prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the day of administration for the second specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T291": {
     "name": "T291",
     "type": "text",
     "page": 5,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date the second corticosteroid/immunosuppressive agent was used?",
-    "context": "Start year of a second prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the year of administration for the second specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T292": {
     "name": "T292",
     "type": "text",
     "page": 5,
     "field_label": "Medication:",
-    "question": "What is the name of the second corticosteroid or immunosuppressive agent used?",
-    "context": "Details of a second specific prior failed medication for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the name of the second corticosteroid or immunosuppressive agent that was used?",
+    "context": "Details for Sjögren syndrome, specifying the second prior medication that was ineffective."
   },
   "T293": {
     "name": "T293",
     "type": "text",
     "page": 5,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date the third corticosteroid/immunosuppressive agent was used?",
-    "context": "Start month of a third prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the month of administration for the third specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T294": {
     "name": "T294",
     "type": "text",
     "page": 5,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date the third corticosteroid/immunosuppressive agent was used?",
-    "context": "Start day of a third prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the day of administration for the third specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T295": {
     "name": "T295",
     "type": "text",
     "page": 5,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date the third corticosteroid/immunosuppressive agent was used?",
-    "context": "Start year of a third prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the year of administration for the third specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T296": {
     "name": "T296",
     "type": "text",
     "page": 5,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date the fourth corticosteroid/immunosuppressive agent was used?",
-    "context": "Start month of a fourth prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the month of administration for the fourth specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T297": {
     "name": "T297",
     "type": "text",
     "page": 5,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date the fourth corticosteroid/immunosuppressive agent was used?",
-    "context": "Start day of a fourth prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the day of administration for the fourth specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "T298": {
     "name": "T298",
     "type": "text",
     "page": 5,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date the fourth corticosteroid/immunosuppressive agent was used?",
-    "context": "Start year of a fourth prior failed therapy for Sjögren's syndrome. Dependent on CB283 'Yes'."
+    "question": "What is the year of administration for the fourth specified medication?",
+    "context": "Date of administration for failed Sjögren's medication, detailing the timeline of prior therapy."
   },
   "CB284": {
     "name": "CB284",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Was treatment with corticosteroids and other immunosuppressive agents not ineffective?",
-    "context": "Evaluates success of prior therapy with corticosteroids or immunosuppressive agents for Sjögren's syndrome."
+    "question": "Was treatment with corticosteroids and other immunosuppressive agents not ineffective for Sjögren's syndrome?",
+    "context": "Sub-question for Sjögren syndrome, indicating prior therapy with standard agents was effective."
   },
   "CB299": {
     "name": "CB299",
@@ -2498,7 +2421,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of refractory thrombotic thrombocytopenic purpura (TTP)?",
-    "context": "Primary diagnostic criterion for refractory TTP, critical for justifying treatment."
+    "context": "Primary clinical question for TTP, confirming diagnosis for potential Rituxan use."
   },
   "CB300": {
     "name": "CB300",
@@ -2506,7 +2429,7 @@
     "page": 5,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of refractory thrombotic thrombocytopenic purpura (TTP)?",
-    "context": "Primary diagnostic criterion for refractory TTP, impacting treatment approval."
+    "context": "Primary clinical question for TTP, indicating absence of diagnosis for Rituxan coverage."
   },
   "CB301": {
     "name": "CB301",
@@ -2514,7 +2437,7 @@
     "page": 5,
     "field_label": "Yes",
     "question": "Does the patient have a documented diagnosis of Waldenström macroglobulinemia?",
-    "context": "Primary diagnostic criterion for Waldenström macroglobulinemia, essential for treatment approval."
+    "context": "Primary clinical question for Waldenström's macroglobulinemia, confirming diagnosis for Rituxan coverage."
   },
   "CB302": {
     "name": "CB302",
@@ -2522,23 +2445,23 @@
     "page": 5,
     "field_label": "No",
     "question": "Does the patient not have a documented diagnosis of Waldenström macroglobulinemia?",
-    "context": "Primary diagnostic criterion for Waldenström macroglobulinemia, impacting treatment approval."
+    "context": "Primary clinical question for Waldenström's macroglobulinemia, indicating absence of diagnosis."
   },
   "CB303": {
     "name": "CB303",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Is this a continuation request resulting from the patient receiving samples of Rituxan (rituximab)?",
-    "context": "Indicates if the continuation request is based on prior Rituxan sample usage."
+    "question": "Is this continuation request a result of the patient receiving samples of Rituxan (rituximab)?",
+    "context": "Continuation request detail, clarifying if the current therapy started with sample medication."
   },
   "CB304": {
     "name": "CB304",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Is this a continuation request not resulting from the patient receiving samples of Rituxan (rituximab)?",
-    "context": "Indicates if the continuation request is not based on prior Rituxan sample usage."
+    "question": "Is this continuation request not a result of the patient receiving samples of Rituxan (rituximab)?",
+    "context": "Continuation request detail, clarifying if the current therapy did not start with sample medication."
   },
   "T305": {
     "name": "T305",
@@ -2546,118 +2469,118 @@
     "page": 5,
     "field_label": "Please indicate the length of time on Rituxan (rituximab):",
     "question": "What is the length of time the patient has been on Rituxan (rituximab)?",
-    "context": "Documents the duration of prior Rituxan therapy for continuation review."
+    "context": "Continuation request detail, specifying duration of current Rituxan therapy for ongoing approval."
   },
   "CB310": {
     "name": "CB310",
     "type": "checkbox",
     "page": 5,
     "field_label": "Mild",
-    "question": "Is the severity of the disease at baseline (pretreatment with Rituxan) mild?",
-    "context": "Baseline disease severity for rheumatoid arthritis, used to assess treatment efficacy."
+    "question": "Was the severity of the rheumatoid arthritis disease at baseline (pretreatment with Rituxan (rituximab)) mild?",
+    "context": "Baseline severity assessment for Rheumatoid Arthritis in continuation requests, used to track treatment efficacy."
   },
   "CB311": {
     "name": "CB311",
     "type": "checkbox",
     "page": 5,
     "field_label": "Moderate",
-    "question": "Is the severity of the disease at baseline (pretreatment with Rituxan) moderate?",
-    "context": "Baseline disease severity for rheumatoid arthritis, used to assess treatment efficacy."
+    "question": "Was the severity of the rheumatoid arthritis disease at baseline (pretreatment with Rituxan (rituximab)) moderate?",
+    "context": "Baseline severity assessment for Rheumatoid Arthritis in continuation requests, used to track treatment efficacy."
   },
   "CB312": {
     "name": "CB312",
     "type": "checkbox",
     "page": 5,
     "field_label": "Severe",
-    "question": "Is the severity of the disease at baseline (pretreatment with Rituxan) severe?",
-    "context": "Baseline disease severity for rheumatoid arthritis, used to assess treatment efficacy."
+    "question": "Was the severity of the rheumatoid arthritis disease at baseline (pretreatment with Rituxan (rituximab)) severe?",
+    "context": "Baseline severity assessment for Rheumatoid Arthritis in continuation requests, used to track treatment efficacy."
   },
   "CB306": {
     "name": "CB306",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Is there clinical documentation supporting rheumatoid arthritis disease stability?",
-    "context": "Evidence of disease stability for rheumatoid arthritis to justify continuation of therapy."
+    "question": "Is there clinical documentation supporting disease stability for rheumatoid arthritis?",
+    "context": "Clinical information for Rheumatoid Arthritis continuation, assessing if disease stability is documented."
   },
   "CB307": {
     "name": "CB307",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Is there no clinical documentation supporting rheumatoid arthritis disease stability?",
-    "context": "Lack of evidence for disease stability for rheumatoid arthritis, impacting continuation review."
+    "question": "Is there no clinical documentation supporting disease stability for rheumatoid arthritis?",
+    "context": "Clinical information for Rheumatoid Arthritis continuation, assessing if disease stability is documented."
   },
   "CB308": {
     "name": "CB308",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Is there clinical documentation supporting rheumatoid arthritis disease improvement?",
-    "context": "Evidence of disease improvement for rheumatoid arthritis to justify continuation of therapy."
+    "question": "Is there clinical documentation supporting disease improvement for rheumatoid arthritis?",
+    "context": "Clinical information for Rheumatoid Arthritis continuation, assessing if disease improvement is documented."
   },
   "CB309": {
     "name": "CB309",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Is there no clinical documentation supporting rheumatoid arthritis disease improvement?",
-    "context": "Lack of evidence for disease improvement for rheumatoid arthritis, impacting continuation review."
+    "question": "Is there no clinical documentation supporting disease improvement for rheumatoid arthritis?",
+    "context": "Clinical information for Rheumatoid Arthritis continuation, assessing if disease improvement is documented."
   },
   "CB313": {
     "name": "CB313",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Is there clinical documentation supporting disease stability for other indications?",
-    "context": "Evidence of disease stability for non-RA indications to justify continuation of therapy."
+    "question": "Is there clinical documentation supporting disease stability for all other indications?",
+    "context": "Clinical information for other indications continuation, assessing if disease stability is documented."
   },
   "CB314": {
     "name": "CB314",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Is there no clinical documentation supporting disease stability for other indications?",
-    "context": "Lack of evidence for disease stability for non-RA indications, impacting continuation review."
+    "question": "Is there no clinical documentation supporting disease stability for all other indications?",
+    "context": "Clinical information for other indications continuation, assessing if disease stability is documented."
   },
   "CB315": {
     "name": "CB315",
     "type": "checkbox",
     "page": 5,
     "field_label": "Yes",
-    "question": "Is there clinical documentation supporting disease improvement for other indications?",
-    "context": "Evidence of disease improvement for non-RA indications to justify continuation of therapy."
+    "question": "Is there clinical documentation supporting disease improvement for all other indications?",
+    "context": "Clinical information for other indications continuation, assessing if disease improvement is documented."
   },
   "CB316": {
     "name": "CB316",
     "type": "checkbox",
     "page": 5,
     "field_label": "No",
-    "question": "Is there no clinical documentation supporting disease improvement for other indications?",
-    "context": "Lack of evidence for disease improvement for non-RA indications, impacting continuation review."
+    "question": "Is there no clinical documentation supporting disease improvement for all other indications?",
+    "context": "Clinical information for other indications continuation, assessing if disease improvement is documented."
   },
   "T317": {
     "name": "T317",
     "type": "text",
     "page": 5,
     "field_label": "Date: (MM)",
-    "question": "What is the month of the date the request was completed?",
-    "context": "Month component of the prior authorization request completion date. Under H. ACKNOWLEDGEMENT."
+    "question": "What is the month the request was completed?",
+    "context": "Request completion date in the Acknowledgment section, indicating when the form was finalized and signed."
   },
   "T318": {
     "name": "T318",
     "type": "text",
     "page": 5,
     "field_label": "Date: (DD)",
-    "question": "What is the day of the date the request was completed?",
-    "context": "Day component of the prior authorization request completion date. Under H. ACKNOWLEDGEMENT."
+    "question": "What is the day the request was completed?",
+    "context": "Request completion date in the Acknowledgment section, indicating when the form was finalized and signed."
   },
   "T319": {
     "name": "T319",
     "type": "text",
     "page": 5,
     "field_label": "Date: (YYYY)",
-    "question": "What is the year of the date the request was completed?",
-    "context": "Year component of the prior authorization request completion date. Under H. ACKNOWLEDGEMENT."
+    "question": "What is the year the request was completed?",
+    "context": "Request completion date in the Acknowledgment section, indicating when the form was finalized and signed."
   }
 }
