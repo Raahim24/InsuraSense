@@ -138,10 +138,3 @@ InsuraSense/
    - While the solution should be designed to handle any form type, successfully implementing support for non-widget-based PDFs will be considered a bonus achievement.
    - The solution should prioritize robust handling of interactive widget-based forms first, then extend capabilities to non-widget formats if possible.
 
-### Delivery Requirement:
-
----
-
-## License
-
-[MIT License](LICENSE)
