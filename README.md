@@ -1,113 +1,137 @@
-### Task: Automate the Prior Authorization (PA) Form Filling Workflow
+# InsuraSense: Automated Prior Authorization Form Filling for Healthcare
 
 ---
 
-### **Purpose of this assignment**
+## Overview
 
-This task is designed to assess the candidate's skills, creativity, and problem-solving abilities in a practical setting. Specifically, we are looking for:
-
-1. The ability to quickly learn and adapt to domain knowledge (in this case, healthcare) from a new vertical.
-2. Existing skills and knowledge in building multimodal ML pipelines.
-3. The capacity to think outside of the box, discovering novel solutions when existing methods fall short.
-4. The ability to effectively leverage existing resources, tools, and libraries to resolve challenges.
-5. Strong fundamental coding skills, including clean, readable, and maintainable code.
-6. Thoughtful handling of ambiguous or incomplete requirements, demonstrating sound judgment in decision-making.
-
-### Background:
-
-**Prior Authorization (PA)** is a process where healthcare providers must obtain approval from a health insurance plan before delivering a specific service (e.g., a drug infusion) to a patient. This process requires assembling evidence to demonstrate that the patient meets specific criteria, such as:
-
-- **Severity of illness**
-- **Ineffectiveness of alternative treatments**
-
-The process typically involves comparing two main documents:
-
-1. **PA Form:**  
-   A structured PDF form specific to a drug, containing fields for the required information needed for insurance approval.
-
-2. **Supporting Documentation (Referral Package):**  
-   A collection of scanned documents such as:
-   - Insurance card
-   - Medical history notes
-   - Test results  
-     These are combined into a single PDF, often sent via fax as high-resolution images.
-
-After comparing the documents and confirming that all criteria are met, the PA request is submitted.
+InsuraSense is an end-to-end automation pipeline designed to streamline the Prior Authorization (PA) process in healthcare. By leveraging advanced AI, OCR, and PDF processing, InsuraSense extracts critical clinical and administrative information from scanned referral packages and automatically populates structured PA forms for insurance approval. This solution reduces manual effort, minimizes errors, and accelerates patient access to necessary treatments.
 
 ---
 
-### Current Manual Workflow:
+## Motivation
 
-Currently, a human worker performs the following steps:
-
-1. **Download the PA Form:**  
-   Retrieve the specific drug's form from the insurance company's website.
-
-2. **Review the Referral Package:**  
-   Extract necessary information from the referral package to complete the PA form.
-
-3. **Complete the PA Form:**  
-   Fill in the required fields on the PA form using information from the referral package.
+Prior Authorization is a time-consuming, error-prone process that requires healthcare staff to manually review referral documents and transcribe information into complex insurance forms. InsuraSense automates this workflow, enabling:
+- Faster insurance approvals
+- Reduced administrative burden
+- Improved accuracy and compliance
+- Scalable handling of diverse form types and patient cases
 
 ---
 
-### Goal:
+## Key Features
 
-Develop a pipeline to automate this workflow.
-
-- **Input:**  
-  Pairs of PA forms and referral packages provided in the input data folder. Input data structure is as follow:
-
-      📁 Input Data
-
-          📁 Patient A
-
-              📄 PA.pdf
-
-              📄 referral_package.pdf
-
-          📁 Patient B
-
-              📄 PA.pdf
-
-              📄 referral_package.pdf
-
-          📁 Patient C
-
-              ...
-
-  The dataset includes approximately 10 referrals and 10 different types of forms for different drugs from different insurance companies. **The pipeline should be designed to generalize to any form and any drug, even those unseen during development.**
-
-- **Output:**
-  - For each patient, the primary output is a **filled PA form as a PDF document**. This PDF will be populated with information extracted and inferred from the provided referral package. Fields for which information could not be found will remain blank on the form.
-  - Accompanying the filled PDF, a **separate report (e.g., a text or markdown file) must be generated for each patient, listing any required fields for which information was missing** from the referral package. This report will clearly indicate what information could not be populated.
-  - The example image below illustrates the general appearance of a filled PA form. Your pipeline will generate the actual filled PDF document.
-    ![Alt text](image/image1.png)
+- **Automated Field Extraction:** Identifies and contextualizes all fillable fields (text, checkboxes) in PA forms, supporting both standard and custom layouts.
+- **AI-Powered Data Extraction:** Uses OCR and large language models to extract, validate, and map relevant information from scanned referral packages.
+- **Intelligent Form Filling:** Populates PA PDFs with extracted answers, handling checkboxes, text, and date fields with clinical logic and formatting rules.
+- **Missing Information Reporting:** Generates a clear report for each patient, listing any required fields that could not be populated from the referral package.
+- **Flexible Output:** Produces both editable and flattened (non-editable) filled PDFs for downstream use.
+- **Modular, Extensible Design:** Built for easy adaptation to new form types, drugs, and insurance requirements.
 
 ---
 
-### Notes:
+## Workflow
 
-1. **Referral Package Complexity:**
+1. **Input Preparation:**
+   - Organize patient data in the `Input Data/` directory, with each patient having a PA form PDF and a referral package PDF (scanned documents).
 
-   - These packages consist of multiple scanned documents combined into a single PDF.
-   - Since these are high-resolution images, text cannot be directly extracted using standard PDF libraries (e.g., PyMuPDF). Optical Character Recognition (OCR) is required.
+2. **Form Field Extraction:**
+   - The pipeline parses the PA form, extracting all fillable fields and their metadata (name, type, label, page, etc.).
 
-2. **PA Form Structure:**
+3. **Contextual Field Analysis:**
+   - An AI model generates human-readable questions and clinical context for each field, enabling robust mapping from unstructured documents.
 
-   - Unlike referral packages, PA forms are well-structured PDFs with retrievable text blocks, making field identification more straightforward.
+4. **Referral Package Processing:**
+   - OCR and AI extract answers for each form field from the referral package, following strict clinical and formatting guidelines.
 
-3. **PA Fields Format:**
+5. **Form Filling:**
+   - The extracted answers are written into the PA PDF, supporting both text and checkbox fields. Both editable and flattened versions are saved.
 
-   - Not every field in a PA form should be filled out. The form often contains mutually exclusive options and branching paths, particularly in checkbox sections. For example:
+6. **Reporting:**
+   - For each patient, a report is generated listing any fields for which information was missing or not documented in the referral package.
 
-     1. If you check "New Patient", you shouldn't also check "Existing Patient"
-     2. Selecting certain options may make other sections irrelevant or inapplicable
-     3. Some sections are conditional and should only be completed based on previous answers
+---
 
-     The goal is to fill out only the appropriate fields based on the patient's specific situation and the logical flow of the form, not to complete every possible field.
+## Directory Structure
 
-4. **Form Types and Implementation Priority:**
+```
+InsuraSense/
+  ├── code.ipynb                # Main pipeline and codebase
+  ├── Input Data/               # Input data organized by patient
+  │     ├── PatientA/
+  │     │     ├── PA.pdf
+  │     │     └── referral_package.pdf
+  │     └── ...
+  ├── info/                     # Extracted data and intermediate outputs
+  ├── output_examples/          # (Recommended) Example filled forms and reports
+  └── README.md                 # Project documentation
+```
+
+---
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-org/InsuraSense.git
+   cd InsuraSense
+   ```
+2. **Install dependencies:**
+   - Python 3.9+
+   - Recommended: Create a virtual environment
+   - Install required packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+3. **Set up API keys:**
+   - Place your Gemini API key in a `.env` file as `GEMINI_API_KEY=your_key_here`
+
+---
+
+## Usage
+
+1. **Prepare Input Data:**
+   - Place each patient's PA form and referral package in a dedicated subfolder under `Input Data/`.
+
+2. **Run the Pipeline:**
+   - Open and execute `code.ipynb` in Jupyter or VSCode.
+   - The notebook will:
+     - Extract and contextualize form fields
+     - Process referral packages
+     - Fill the PA PDF and generate reports
+     - Save outputs in the corresponding patient folder
+
+3. **Review Outputs:**
+   - Filled PA forms: `Input Data/<Patient>/PA_filled.pdf` and `PA_filled_flat.pdf`
+   - Missing info reports: (customizable, e.g., `Input Data/<Patient>/missing_fields.md`)
+
+---
+
+## Example Output
+
+- **Filled PA Form:** See `Input Data/Abdulla/PA_filled.pdf`
+- **Flattened PDF:** See `Input Data/Abdulla/PA_filled_flat.pdf`
+- **Missing Information Report:** (To be generated per patient)
+
+---
+
+## Assumptions & Limitations
+
+- The pipeline is optimized for widget-based (fillable) PDF forms. Non-widget forms may require additional handling.
+- Referral packages must be high-quality scans for best OCR results.
+- The AI model is tuned for English-language, US healthcare forms.
+- Some fields may remain unfilled if information is not present in the referral package.
+
+---
+
+## Future Work
+
+- Support for non-widget (non-interactive) PDF forms
+- Enhanced OCR for low-quality scans
+- Customizable output formats (e.g., CSV, JSON reports)
+- Integration with EHR and insurance APIs
+- User interface for manual review and correction
+
+---
 
    - PA forms come in two formats: interactive widget-based PDFs (containing AcroForm widgets) and non-widget-based PDFs.
    - The primary expectation is for the pipeline to work with widget-based PDFs that contain fillable form fields.
@@ -116,18 +140,8 @@ Develop a pipeline to automate this workflow.
 
 ### Delivery Requirement:
 
-1. **Submission Format:**
+---
 
-   - The automated pipeline, along with all supporting materials, must be submitted as a new branch named `automation-pa-filling-[your name]` in the GitHub repository. Do **not** push changes directly to the `main` branch.
+## License
 
-2. **Required Deliverables:**
-   - **Source Code:**
-     - Implement the complete pipeline for automating the PA form-filling workflow. Code should be modular, readable, and include appropriate comments.
-   - **Documentation:**
-     - Replace the current `README.md` file with your own documentation that includes:
-       - Step-by-step installation instructions
-       - Your thought process on how you implement
-       - Any assumptions or limitations of the implementation
-     - Additional documentation in the `docs/` folder if necessary, such as architectural diagrams, workflows, or examples of the expected outputs.
-   - **Output Examples:**
-     - Include examples of the **filled PA form PDFs** and their **corresponding missing information reports** for the sample input data. These examples will demonstrate the expected pipeline behavior and output format. It is recommended to store these example files in a dedicated directory (e.g., `output_examples/`).
+[MIT License](LICENSE)
