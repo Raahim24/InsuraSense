@@ -3,6 +3,8 @@ extracted_medical_data.json
 my-new-file.txt
 .env
 venv/
+.venv/
+
 
 # Ignore PDFs and input data (optional if sensitive)
 
