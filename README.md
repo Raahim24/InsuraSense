@@ -55,7 +55,7 @@ Prior Authorization is a time-consuming, error-prone process that requires healt
 
 ```
 InsuraSense/
-  ├── code.ipynb                # Main pipeline and codebase
+  ├── app.py                    # Main pipeline and codebase
   ├── Input Data/               # Input data organized by patient
   │     ├── PatientA/
   │     │     ├── PA.pdf
@@ -93,7 +93,7 @@ InsuraSense/
    - Place each patient's PA form and referral package in a dedicated subfolder under `Input Data/`.
 
 2. **Run the Pipeline:**
-   - Open and execute `code.ipynb` in Jupyter or VSCode.
+   - Open and execute `app.py` in VSCode.
    - The notebook will:
      - Extract and contextualize form fields
      - Process referral packages
@@ -101,7 +101,7 @@ InsuraSense/
      - Save outputs in the corresponding patient folder
 
 3. **Review Outputs:**
-   - Filled PA forms: `Input Data/<Patient>/PA_filled.pdf` and `PA_filled_flat.pdf`
+   - Filled PA forms: `Input Data/<Patient>/PA_filled.pdf` 
    - Missing info reports: (customizable, e.g., `Input Data/<Patient>/missing_fields.md`)
 
 ---
@@ -109,8 +109,6 @@ InsuraSense/
 ## Example Output
 
 - **Filled PA Form:** See `Input Data/Abdulla/PA_filled.pdf`
-- **Flattened PDF:** See `Input Data/Abdulla/PA_filled_flat.pdf`
-- **Missing Information Report:** (To be generated per patient)
 
 ---
 
